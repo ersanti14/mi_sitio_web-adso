@@ -4,9 +4,16 @@ body {
     justify-content: center ;
     align-items: center;
     height: 100vh;
+    background-color: blue;
 }
 h1 {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'waltograph', cursive;
     font-size: 9em;
     color: rgb(255, 255, 255);
+}
+
+@font-face {
+    font-family: 'waltograph', cursive;
+   src:url(../fonts/waltographUI.ttf)
+
 }
