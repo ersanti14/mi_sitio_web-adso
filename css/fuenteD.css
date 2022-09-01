@@ -1,19 +1,18 @@
 body {
-    background-color: rgba(103, 180, 180, 0.9);
     display: flex;
     justify-content: center ;
     align-items: center;
-    height: 100vh;
-    background-color: blue;
+    height: 90vh;
+    background-color: rgb(0 0 205);
 }
 h1 {
-    font-family: 'waltograph', cursive;
+    font-family:"waltograph";
     font-size: 9em;
     color: rgb(255, 255, 255);
 }
 
 @font-face {
-    font-family: 'waltograph', cursive;
-   src:url(../fonts/waltographUI.ttf)
+    font-family: "waltograph";
+    src: url(../fonts/Walter.ttf);
 
 }
