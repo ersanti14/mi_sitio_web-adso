@@ -1,0 +1,25 @@
+.box {
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    background-color: aquamarine;
+}
+.box1 {
+    margin-right: 50px;
+    border-right: 5px solid black;
+    padding: 25px;
+    background-color: rgb(0, 206, 137);
+    margin-bottom: 20px;
+}
+.box2 {
+    margin-right: 50px;
+    border-right: 5px solid blue;
+    padding: 25px;
+    background-color: brown;
+    margin-bottom: 20px;
+}
+.box3 {
+    margin-right: 50px;
+    border-right: 5px;
+    
+}
