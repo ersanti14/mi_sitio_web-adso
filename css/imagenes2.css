@@ -1,0 +1,28 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+.box-img {
+    width: 600px;
+    margin: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.img-style {
+    width: 100%;
+    border: solid transparent;
+    border-radius: 4%;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    justify-content: center;
+}

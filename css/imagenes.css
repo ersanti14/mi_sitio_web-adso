@@ -1,23 +1,40 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
 }
-.img-100 {
+
+.box-img {
+    width: 29%;
+    margin: 30px 2.075%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.img-style {
     width: 100%;
+    border: solid transparent;
+    border-radius: 4%;
+}
+.in {
+    background-color: rgb(5, 106, 236);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 150%;
+}
+h1 {
+    text-align: center;
+    background-color: rgb(5, 106, 236);
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 300%;
+
+}
+h2,
+h3 {
     text-align: center;
 }
-.h {
+
+p {
     text-align: center;
-}
-.img-yz {
-    width: 30%;
-}
-.img-xtz660 {
-    width: 30%;
-}
-.img-mt09 {
-    width: 30%;
-}
-.img-xtz250 {
-    width: 30%;
+    justify-content: center;
 }
