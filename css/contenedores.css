@@ -4,6 +4,26 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+li {
+    font-size: 25px;
+    margin: 20px;
+    display: inline-block;
+    color: rgb(255, 61, 61);
+}
+li:hover {
+    background-color: rgb(175, 180, 180);
+    color: rgb(255, 255, 255);
+}
+
+a {
+    color: rgb(0, 0, 0);
+}
+.in {
+    background-color: rgb(77, 197, 245);
+    text-align: left;
+    padding-right: 40px;
+}
+
 .contenedor1 {
     justify-content: center;
     display: flex;
