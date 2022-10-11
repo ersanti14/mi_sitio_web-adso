@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tablas</title>
+    <link rel="stylesheet" href="css/tablas.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li> <a href="index.html">inicio</a></li>
+        </ul>
+    </nav>
+
+    <h1>CATÁLOGOS DE CARROS-BMW</h1>
+<div class="table-style">
+    <table>
+      <thead>
+        <th>imagen</th>
+        <th>Modelo</th>
+        <th>Motor</th>
+        <th>Costo</th>
+        <th>Años</th>
+        
+      </thead>
+      <tbody>
+        <tr>
+            <td><img src="img/BMW 320i. 1100x765jepg.jpg" alt=""></td>
+            <td>BMW 320i</td>
+            <td>2.000 CC</td>
+            <td>$70.000.000</td>
+            <td>2003</td>
+        </tr>
+        <tr>
+            <td><img src="img/BMW 330i.1100x760jepg.jpg" alt=""></td>
+            <td>BMW 330i</td>
+            <td>3.000 CC</td>
+            <td>$80.000.000</td>
+            <td>2005</td>
+        </tr>
+        <tr>
+            <td><img src="img/BMW 340i.1100.760jepg.jpg" alt=""></td>
+            <td>BMW 340i</td>
+            <td>4.000 CC</td>
+            <td>$90.000.000</td>
+            <td>2000</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+<h1>TABLAS EN HTML</h1>
+<div class="table-style" >
+    <table>
+        <thead>
+            <th class="lite">Paquete</th>
+            <th class="lite">Programacion</th>
+            <th class="top-lite">Plan Basic 2021</th>
+            <th class="row-lite">Plan Silver 2021</th>
+            <th class="righ-lite">Plan Golden 2021</th>
+            <th class="col-lite">Plan Titanium 2021</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="lite">No Aplica</td>
+                <td class="lite">Discovery Channel</td>
+                <td class="lo" colspan="4" >Si</td>
+            </tr>
+            <tr>
+                <td class="lite">No Aplica</td>
+                <td class="lite">Animal Planet</td>
+                <td class="r">x</td>
+                <td class="r">x</td>
+                <td class="v">✓</td>
+                <td class="v">✓</td>
+            </tr>
+            <tr>
+                <td class="lite" rowspan="3">HBO</td>
+                <td class="lite">HBO Family</td>
+                <td class="r">x</td>
+                <td class="r">x</td>
+                <td class="r">x</td>
+                <td class="v">✓</td>
+            </tr>
+            <tr>
+                
+                <td class="lite">HBO Classic</td>
+                <td class="N">No</td>
+                <td class="N">No</td>
+                <td class="N">No</td>
+                <td class="S">Si</td>
+            </tr>
+            <tr>
+                
+                <td class="lite">HBO Comedy</td>
+                <td class="N">No</td>
+                <td class="N">No</td>
+                <td class="N">No</td>
+                <td class="S">Si</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+   
+</body>
+</html>
+
+.table-style {
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+ }  
+   h1 {
+    text-align: center;
+   }
+   
+th, td {
+    border: 1px solid black;
+    padding: 10px 12px;
+
+}
+
+table {
+    border-collapse: collapse;
+}
+thead {
+    background-color:cadetblue;
+}
+tbody {
+    background-color:rgb(230, 234, 235);
+}
+img {
+    width: 115px;
+}
+
+    .lite {
+        color:white;
+        background-color:rgb(0, 175, 169) ;
+    }
+    .top-lite {
+        background-color: rgb(25, 133, 52);
+        color: white;
+    }
+    .row-lite {
+        background-color:rgb(9, 112, 230);
+        color: white;
+    }
+    .righ-lite {
+        background-color:darkorange;
+        color: white;
+    }
+    .col-lite {
+        background-color:rgb(75, 13, 133);
+        color: white;
+    }
+    .lo {
+        text-align: center;
+    }
+    .r {
+        color: red;
+        text-align: center;
+    }
+    .v {
+        color: green;
+        text-align: center;
+    }
+    .N {
+        text-align: center;
+    }
+    .S {
+        text-align: center;
+    }
