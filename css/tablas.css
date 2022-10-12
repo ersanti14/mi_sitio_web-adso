@@ -1,13 +1,17 @@
-.table-camaro {
-    padding: 25px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
+* {
+    margin: 0%;
+    padding: 0%;
+}
+.table-1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+    align-items:center ;
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
-th,
-td {
+.t1 {
     border: 1px solid black;
     padding: 10px 12px;
 }
@@ -16,19 +20,35 @@ th {
     background-color: rgb(0, 217, 255);
 }
 
-table {
+.n1 {
     border-collapse: collapse;
+    justify-items: center;
+    text-align: center;
 }
 
 .in {
     background-color: aqua;
     padding: 15px;
 }
-
+ul {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-right: 95.3% ;
+}
+ul:hover {
+    background-color: rgb(255, 255, 255);
+}
+a {
+    color: rgb(0,0,0);
+    font-size: 20px;
+}
 h1 {
     text-align: center;
-    font-size: 35px;
+    font-size: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+    margin-top: -20px;
 }
 
 .img-1 {
@@ -38,28 +58,32 @@ h1 {
 .img-2 {
     width: 300px;
 }
-
-.table-style {
-    display: inline-block;
-    padding: 25px;
-    justify-content: center;
-    align-items: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.img-3 {
+    width: 300px;
 }
-
-h2 {
+h3 {
     text-align: center;
     font-size: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.table-2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+    align-items:center ;
+    display: flex;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
 
 th, td {
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     padding: 10px 12px;
 }
 
-table {
+.n2 {
     border-collapse: collapse;
+    justify-items: center;
+    text-align: center;
 }
 
 thead {
@@ -100,23 +124,23 @@ img {
 }
 
 .lo {
-    text-align: center;
+    
 }
 
 .r {
     color: red;
-    text-align: center;
+    ;
 }
 
 .v {
     color: green;
-    text-align: center;
+    
 }
 
 .N {
-    text-align: center;
+    
 }
 
 .S {
-    text-align: center;
+    
 }

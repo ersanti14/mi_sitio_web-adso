@@ -16,25 +16,37 @@
     border-radius: 4%;
 }
 .in {
-    background-color: rgb(5, 106, 236);
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 150%;
+    background-color: rgb(0, 68, 255);
+    padding: 15px;
+}
+ul {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-right: 95.3% ;
+}
+ul:hover {
+    background-color: rgb(53, 53, 53);
+}
+a {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
 }
 h1 {
     text-align: center;
-    background-color: rgb(5, 106, 236);
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 300%;
-
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+    margin-top: -20px;
+    color: rgb(255, 255, 255);
 }
-h2,
-h3 {
+h2,h3 {
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 p {
     text-align: center;
     justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
