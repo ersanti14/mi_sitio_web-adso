@@ -1,11 +1,46 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+.in {
+    background-color: rgb(57, 87, 154);
+    padding: 15px;
+}
+ul {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-right: 95.3% ;
+}
+ul:hover {
+    background-color: rgb(53, 53, 53);
+}
+.a1 {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+h1 {
+    text-align: center;
+    font-size: 60px;
+    font-family: "klavika";
+    margin-bottom: 20px;
+    margin-top: -20px;
+    color: rgb(255, 255, 255);
+}
+@font-face {
+    font-family: "klavika";
+    src: url(../fonts/klavika-bold.otf);
+}
 label {
     display: block;
     margin: 10px;
 }
-h1{
+h2 {
+    margin-top: 30px;
+    color: rgb(57, 87, 154);
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: blue;
+    font-size: 25px;
 }
 input[type="text"] {
     margin-bottom: 20px;
@@ -13,7 +48,7 @@ input[type="text"] {
     font-size: 1em;
     width: 400px;
     border: none;
-    border-bottom: 1px solid rgb(64,64,64);
+    border-bottom: 1px solid rgb(45, 62, 218);
 }
 input[type="password"] {
     margin-bottom: 20px;
@@ -21,7 +56,7 @@ input[type="password"] {
     font-size: 1em;
     width: 400px;
     border: none;
-    border-bottom: 1px solid rgb(64,64,64);
+    border-bottom: 1px solid rgb(57, 87, 154);
 }
 input [type="text"]:focus {
     outline: none;
@@ -29,15 +64,46 @@ input [type="text"]:focus {
 form{
     font-size: 1.1em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 30px;
+    margin: 100px 0px 0px 0px;
     display: flex;
-    text-align: center;
     justify-content: center;
+    text-align: center;
     width: 100%;
 }
 fieldset{
     width: 500px;
+    border-radius: 5%;
+    border-color: rgb(57, 87, 154);
+    background-color: rgb(255, 255, 255);
 }
 input{
     margin: 5px;
+}
+input[type="submit"] {
+    font-size: 1.1em;
+    border: 2%;
+    border-radius: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(57, 87, 154);
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    width: 81%;
+    border: none;
+}
+a {
+    display: block;
+    margin: 10px;
+    color: rgb(57, 87, 154);
+}
+.nuevacuenta[type="submit"] {
+    font-size: 1.1em;
+    border: 2%;
+    border-radius: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(66, 183, 42);
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    width: 81%;
+    border: none;
+    margin-bottom: 20px;
 }

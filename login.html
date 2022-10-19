@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,26 +8,28 @@
     <title>LOGIN</title>
     <link rel="stylesheet" href="css/login.css">
 </head>
+
 <body>
-    <h1>FACEBOOK</h1>
+    <div class="in">
+        <ul>
+            <a class="a1" href="index.html">INICIO</a>
+        </ul>
+    <h1>facebook</h1>
+    </div>
     <form action="">
         <fieldset>
-            <legend>INICIE SESIÓN</legend>
-            <label for="">Ingrese su tipo de Documento</label>
-            <select>
-                <option value="">Registro Civil</option>
-                <option value="">Tarjeta de Identidad</option>
-                <option value="">Cedula de Identidad</option>
-                <option value="">Cedula Extranjera</option>
-            </select>
-            <label for="">Ingrese su numero de documento</label>
-            <input type="text" placeholder="Ingrese su numero de documento">
+            <h2>Iniciar sesión en Facebook</h2>
+            <label for="">Ingrese su Correo Electronico</label>
+            <input type="text" required placeholder="Correo Electrónico o Teléfono">
             <label for="">Contraseña</label>
-            <input type="password" required placeholder="Ingrese su contraseña">
-            <label for="">¿olvido su contraseña?</label>
-            <button>Iniciar Sesión</button>
+            <input type="password" required placeholder="Contraseña">
+            <input type="submit" value="Inicia sesión">
+            <a href="login.html">¿Has olvidado los datos de la cuenta?</a>
+            <p>o</p>
+            <input class="nuevacuenta" type="submit" value="Crear cuenta nueva">
         </fieldset>
-    </form>    
-    
+    </form>
+
 </body>
+
 </html>
