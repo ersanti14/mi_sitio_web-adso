@@ -1,0 +1,43 @@
+label {
+    display: block;
+    margin: 10px;
+}
+h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+}
+input[type="text"] {
+    margin-bottom: 20px;
+    padding: 7px;
+    font-size: 1em;
+    width: 400px;
+    border: none;
+    border-bottom: 1px solid rgb(64,64,64);
+}
+input[type="password"] {
+    margin-bottom: 20px;
+    padding: 7px;
+    font-size: 1em;
+    width: 400px;
+    border: none;
+    border-bottom: 1px solid rgb(64,64,64);
+}
+input [type="text"]:focus {
+    outline: none;
+}
+form{
+    font-size: 1.1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+fieldset{
+    width: 500px;
+}
+input{
+    margin: 5px;
+}
