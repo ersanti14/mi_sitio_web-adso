@@ -23,7 +23,7 @@
 }
 .item-horizontal {
     display: inline-block;
-    border-right: 1px solid #fb5b04;
+    border-right: 1px solid #52bb32;
     padding: 7px 10px;
     width: 50;
 }
@@ -45,8 +45,8 @@ a {
 
 
 
-
-/* {
+/*
+{
     margin: 0;
     padding: 0;
 }
@@ -80,4 +80,4 @@ li:hover {
 a {
     text-decoration: none;
     color: white;
-}*/
+}
