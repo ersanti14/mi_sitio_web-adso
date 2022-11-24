@@ -11,5 +11,4 @@ barMenu.addEventListener("click", function() {
             main_Menu.classList.add("main-menu");
         }
         
-
     });

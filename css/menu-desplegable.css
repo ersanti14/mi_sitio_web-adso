@@ -1,64 +1,77 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+body {
     background-color: rgba(255, 255, 255, 0.404);
 }
 nav {
     font-size: 1.5em;
     background-color: rgb(157, 179, 172);
-    text-align: center;
 }
 nav ul {
-    list-style: none;
-    padding: 0;
-    display: table;
-    position: absolute;
     width: 100%;
     background-color: rgb(157, 179, 172);
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    display: inline-block;
+    position: absolute;
+    background-color: rgb(157, 179, 172);
 }
 nav a {
     text-decoration: none;
-    display: block;
-    padding: 0 2.2em;
+    color: white;
+    padding: 0 2.2em; 
     color: white;
     margin: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: inline-block;
 }
+
 /*meno primer nivel*/
 nav > ul > li {
     float: left;
     width: 320px;
-    line-height: 70px;
     position: relative;
     left: 100px;
+    line-height: 70px;
+    /* float: left;
     
+    line-height: 70px;
+    position: relative;
+    left: 100px; */
+
 }
 nav li {
-    position:relative;
+    position: relative;
 }
+
 nav li li {
     max-height: 0;
     overflow: hidden;
     transition: all 1s;
 }
-nav li:hover > ul > li {
+
+nav li:hover>ul>li {
     visibility: visible;
-    max-height: 500px;
+    max-height: 100px;
     overflow: visible;
 }
+
 nav ul ul ul {
     left: 100%;
     top: 0;
 }
+
 a:hover {
     color: rgb(139, 219, 194);
 }
-.boderA {
+
+/* .boderA {
     border-right: 1px solid rgb(255, 255, 255);
-    border-left: 1px solid white;
-}
+} */
 
 .icon-style {
     color: rgb(255, 255, 255);
@@ -69,14 +82,15 @@ a:hover {
     margin: 0;
     padding: 0;
     padding-top: 20px;
-    
+
 }
+
 .icon-style:hover {
-    cursor:pointer;
+    cursor: pointer;
     color: rgb(90, 104, 114);
     float: left;
 }
 
-li{
+/* li {
     border-bottom: 1px solid rgb(255, 255, 255);
-}
+} */
