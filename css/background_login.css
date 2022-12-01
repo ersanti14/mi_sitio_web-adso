@@ -14,10 +14,9 @@ body{
 }
 img{
     width: 180px;
-    display: inline-block;
-    position: fixed;
-    top: 85%;
-    left: 85%;
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
 }
 div{
     padding-top: 120px;
