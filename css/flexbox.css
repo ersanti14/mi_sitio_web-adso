@@ -1,0 +1,156 @@
+h1 {
+     text-align: center;
+     font-size: 3.5em;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 2em;
+}
+
+.box {
+     width: 400px;
+     height: 400px;
+     background-color: rgb(221, 141, 37);
+     margin: 10px 10px;
+     color: white;
+     font-size: 3.5em;
+}
+
+.box-direction {
+     display: flex;
+     flex-direction: row;
+     background-color: aquamarine;
+}
+
+.box-wrap {
+     display: flex;
+     flex-wrap: wrap;
+     background-color: rgb(12, 122, 86);
+     flex-direction: row;
+}
+
+.box-nowrap {
+     display: flex;
+     flex-flow: row nowrap;
+     background-color: rgb(12, 82, 58);
+}
+
+.box-wrap-continuo {
+     display: flex;
+     flex-flow: column wrap;
+     height: 415px;
+     overflow-x: scroll;
+     overflow-y: hidden;
+     padding-bottom: 40px;
+}
+
+.box-space-between {
+     height: 420px;
+     display: flex;
+     background-color: black;
+     justify-content: space-between;
+}
+
+.box-space-around {
+     height: 420px;
+     display: flex;
+     background-color: black;
+     justify-content: space-around;
+}
+
+.box-space-evenly {
+     height: 420px;
+     display: flex;
+     background-color: black;
+     justify-content: space-evenly;
+}
+
+.box-flex-start {
+     height: 420px;
+     display: flex;
+     background-color: black;
+     justify-content: flex-start;
+}
+
+.box-flex-end {
+     height: 420px;
+     display: flex;
+     background-color: black;
+     justify-content: flex-end;
+     flex-flow: row-reverse;
+}
+
+.box-flex-center {
+     height: 420px;
+     display: flex;
+     background-color: black;
+     justify-content: center;
+}
+
+.box-align-start {
+     height: 500px;
+     display: flex;
+     background-color: black;
+     align-items: self-start;
+}
+
+.box-41 {
+     height: 480px;
+}
+
+.box-42 {
+     height: 210px;
+}
+
+.box-align-end {
+     display: flex;
+     align-items: flex-end;
+     justify-content: center;
+     width: 750px;
+     gap: 5px;
+     border-bottom: 2px solid rgb(64, 64, 64, .8);
+     box-shadow: 0 2px 5px rgb(64, 64, 64, .6);
+}
+
+.box-box-align {
+     width: 130px;
+     background-color: black;
+     margin-bottom: 0;
+}
+
+.box-44 {
+     height: 380px;
+}
+
+.box-45 {
+     height: 150px;
+}
+
+.box-46 {
+     height: 240px;
+}
+
+.box-47 {
+     height: 190px;
+}
+
+.box-48 {
+     height: 400px;
+}
+
+.box-main-align {
+     display: flex;
+     justify-content: center;
+}
+
+p {
+     justify-content: center;
+     display: flex;
+     font-size: 0.8em;
+}
+
+.texto-grafica {
+     flex-direction: column;
+}
