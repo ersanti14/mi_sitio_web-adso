@@ -111,13 +111,18 @@ h2 {
      width: 750px;
      gap: 5px;
      border-bottom: 2px solid rgb(64, 64, 64, .8);
-     box-shadow: 0 2px 5px rgb(64, 64, 64, .6);
+     border-left: 0 2px 5px solid rgb(64, 64, 64, .8);
+     box-shadow: 2px rgb(64, 64, 64, .6);
+     padding-left: 20px;
 }
 
 .box-box-align {
      width: 130px;
      background-color: black;
      margin-bottom: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
 }
 
 .box-44 {
@@ -152,5 +157,12 @@ p {
 }
 
 .texto-grafica {
-     flex-direction: column;
+     transform: rotate(-90deg);
+     justify-content: flex-end;
+     font-size: 1.4em;
+     background-color: blue;
+     height: 30px;
+     width: 500px;
+     display: flex;
+     align-items: center;
 }
