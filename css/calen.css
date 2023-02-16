@@ -1,0 +1,53 @@
+.box{
+    background-color: rgb(0, 255, 179);
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    font-size: 1.4em;
+}
+.diciembre{
+    display: grid;
+    grid-template-columns: repeat(7, 200px);
+    grid-template-rows: repeat(6, 120px);
+    border: 2px solid rgb(64, 64, 64,.8);
+    width: 1400px;
+    height: 720px;
+}
+.box3-1{
+    background-color: rgb(0, 255, 179);
+    grid-column-start: 6;
+    grid-column-end: 7;
+}
+
+.dias{
+    grid-template-columns: repeat(7,200px);
+    display: grid;
+    border: 2px solid rgb(64, 64, 64,.8);
+    height: 30px;
+    width: 1400px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.box1{
+    background-color: rgb(0, 0, 0);
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 1.4em;
+}
+.boxd{
+    background-color: rgb(0, 195, 255);
+}
+.calendario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4em;
+    text-align: center;
+}
