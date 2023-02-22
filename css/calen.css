@@ -1,35 +1,40 @@
-.box{
+.box {
     background-color: rgb(0, 255, 179);
     border: 1px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(0, 0, 0);
-    font-size: 1.4em;
+    color: rgba(0, 0, 0, 0.836);
+    font-size: 1.7em;
+    margin: 1px;
 }
-.diciembre{
+
+.diciembre {
     display: grid;
     grid-template-columns: repeat(7, 200px);
-    grid-template-rows: repeat(6, 120px);
-    border: 2px solid rgb(64, 64, 64,.8);
+    grid-template-rows: repeat(6, 100px);
+    border: 2px solid rgba(92, 88, 88, 0.8);
     width: 1400px;
-    height: 720px;
+    height: 600px;
+    font-family: "Good Times";
 }
-.box3-1{
+
+.box3-1 {
     background-color: rgb(0, 255, 179);
     grid-column-start: 6;
     grid-column-end: 7;
 }
 
-.dias{
-    grid-template-columns: repeat(7,200px);
+.dias {
+    grid-template-columns: repeat(7, 200px);
     display: grid;
-    border: 2px solid rgb(64, 64, 64,.8);
-    height: 30px;
+    height: 45px;
     width: 1400px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Good Times";
+    padding-bottom: 10px;
 }
-.box1{
+
+.box1 {
     background-color: rgb(0, 0, 0);
     border: 1px solid white;
     display: flex;
@@ -38,16 +43,40 @@
     color: rgb(255, 255, 255);
     font-size: 1.4em;
 }
-.boxd{
+
+.boxd {
     background-color: rgb(0, 195, 255);
 }
-.calendario{
+
+.box-nn {
+    background-color: rgba(64, 64, 64, 0.267);
+    color: white
+}
+
+.calendario {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 60px;
 }
-h2{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 4em;
+
+@font-face {
+    font-family: "Humble Stayle";
+    src: url(../fonts/Humble\ Stayle.ttf);
+}
+
+@font-face {
+    font-family: "Good Times";
+    src: url(../fonts/good\ times\ rg.otf);
+}
+
+.texto-degradado {
+    font-family: "Good Times";
+    font-size: 5em;
     text-align: center;
+    margin: 50px;
+    background: linear-gradient(rgb(0, 255, 179), rgb(0, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration:     1px solid black;
 }
