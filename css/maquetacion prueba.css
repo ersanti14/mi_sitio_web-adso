@@ -2,8 +2,8 @@
     gap: 10px;
     display: grid;
     grid-template: "logo  home  pod   biblioteca vacio  busqueda btn-descargar btn-inicio"80px
-                    "img  img   img   img        img    img      img           img"       600px/
-                    300px 150px 150px 150px      1fr    250px    250px         250px;
+                    "img  img   img   img        img    img      img           img"       550px/
+                    300px 150px 150px 150px      1fr    200px    300px         250px;
 }
 .box{
     border-radius: 6px;
@@ -25,7 +25,6 @@
     background-color: rgb(157, 118, 194);
 }
 .vacio{
-    border-radius: 6px;
     grid-area: vacio;
     background-color: rgb(0, 0, 0);
 }
@@ -53,4 +52,46 @@
     align-items: center;
     font-size: 1.5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.box-conte{
+    padding-top: 10px;
+    display: grid;
+    grid-template: "tex-1   tex-2   tex-3" 800px/
+                    450px   450px   450px;
+}
+.tex-1{
+    height: 800px;
+    border-radius: 6px;
+    background-color: aqua;
+    grid-area: tex-1;
+}
+.tex-2{
+    height: 800px;
+    border-radius: 6px;
+    background-color: blue;
+    grid-area: tex-2;
+}
+.tex-3{
+    height: 800px;
+    border-radius: 6px;
+    background-color: blueviolet;
+    grid-area: tex-3;
+}
+p{
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 15px;
+}
+.cc{
+    gap: 80px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 5% 0 5%;
 }
