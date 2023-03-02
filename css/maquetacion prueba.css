@@ -1,50 +1,59 @@
-.box-header{
+.box-header {
+    visibility: visible;
     gap: 10px;
     display: grid;
-    grid-template: "logo  home  pod   biblioteca vacio  busqueda btn-descargar btn-inicio"80px
-                    "img  img   img   img        img    img      img           img"       550px/
-                    300px 150px 150px 150px      1fr    200px    300px         250px;
+    grid-template: "logo  pod   biblioteca vacio  busqueda descargar  inicio" 80px
+        "img  img   img        img    img      img        img" 580px/
+        300px 150px 150px 1fr 200px 300px 250px;
 }
-.box{
+
+.box {
     border-radius: 6px;
 }
-.logo{
+
+.box-logo {
     grid-area: logo;
-    background-color:aquamarine;
+    background-color: aquamarine;
 }
-.home{
-    grid-area: home;
-    background-color: blueviolet;
-}
-.pod{
+
+.box-pod {
     grid-area: pod;
-    background-color: rgb(194, 129, 255);
+    background-color: rgb(142, 22, 255);
 }
-.biblioteca{
+
+.box-biblioteca {
     grid-area: biblioteca;
     background-color: rgb(157, 118, 194);
 }
-.vacio{
+
+.vacio {
     grid-area: vacio;
     background-color: rgb(0, 0, 0);
 }
-.busqueda{
+
+.box-busqueda {
     grid-area: busqueda;
     background-color: rgb(139, 139, 139);
 }
-.btn-descargar{
+
+.box-descargar {
     background-color: black;
-    grid-area: btn-descargar;
+    grid-area: descargar;
 }
-.btn-inicio{
+
+.box-inicio {
     background-color: blue;
-    grid-area: btn-inicio;
+    grid-area: inicio;
 }
-.img{
+
+.img {
+    height: 100%;
+    width: 100%;
     grid-area: img;
-    background-color: brown;
+    background-color: rgb(255, 0, 0);
 }
-.texto-grid{
+
+.texto-grid {
     height: 100%;
     color: white;
     display: flex;
@@ -53,31 +62,38 @@
     font-size: 1.5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.box-conte{
-    padding-top: 10px;
+
+.box-conte {
+    height: 750px;
+    padding-top: 30px;
+    padding-bottom: 50px;
     display: grid;
     grid-template: "tex-1   tex-2   tex-3" 800px/
-                    450px   450px   450px;
+        450px 450px 450px;
 }
-.tex-1{
-    height: 800px;
+
+.tex-1 {
+    height: 100%;
     border-radius: 6px;
     background-color: aqua;
     grid-area: tex-1;
 }
-.tex-2{
-    height: 800px;
+
+.tex-2 {
+    height: 100%;
     border-radius: 6px;
     background-color: blue;
     grid-area: tex-2;
 }
-.tex-3{
-    height: 800px;
+
+.tex-3 {
+    height: 100%;
     border-radius: 6px;
     background-color: blueviolet;
     grid-area: tex-3;
 }
-p{
+
+p {
     font-size: 1.2em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
@@ -86,12 +102,221 @@ p{
     align-content: center;
     margin: 15px;
 }
-.cc{
-    gap: 80px;
+
+.cc {
+    gap: 40px;
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
     margin: 0 5% 0 5%;
+}
+
+@media only screen and (max-width:1300px) {
+    
+    .box-header {
+        visibility: visible;
+        gap: 10px;
+        display: grid;
+        grid-template: "logo  vacio  busqueda descargar  inicio" 80px
+                        "img  img    img      img        img" 580px/
+                        300px 1fr    200px    300px      250px;
+    }
+
+    .box {
+        border-radius: 6px;
+    }
+
+    .logo {
+        grid-area: logo;
+        background-color: aquamarine;
+    }
+
+    .vacio {
+        grid-area: vacio;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .busqueda {
+        grid-area: busqueda;
+        background-color: rgb(139, 139, 139);
+    }
+
+    .inicio {
+        background-color: blue;
+        grid-area: inicio;
+    }
+
+    .img {
+        width: 100%;
+        grid-area: img;
+        background-color: rgb(255, 0, 0);
+    }
+
+    .box-descargar {
+        background-color: black;
+        grid-area: descargar;
+    }
+
+    .texto-grid {
+        height: 100%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.25em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .box-home,
+    .box-biblioteca,
+    .box-pod {
+        display: none;
+    }
+
+    .cc {
+        padding-top: 20px;
+        display: grid;
+        grid-template:  "tex-1 tex-2 " 700px
+        "tex-3 empty" 700px/
+        1fr 1fr;
+    }
+
+    .tex-1 {
+        border-radius: 6px;
+        background-color: aqua;
+        grid-area: tex-1;
+    }
+
+    .tex-2 {
+        border-radius: 6px;
+        background-color: blue;
+        grid-area: tex-2;
+    }
+
+    .tex-3 {
+        border-radius: 6px;
+        background-color: blueviolet;
+        grid-area: tex-3;
+    }
+
+    p {
+        height: 100%;
+        font-size: 1em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: justify;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0 20px 0;
+    }
+
+}
+
+@media only screen and (max-width:700px) {
+
+    .box-header {
+        visibility: visible;
+        gap: 10px;
+        display: grid;
+        grid-template: "logo   vacio  busqueda  inicio" 80px
+            "img   img    img       img" 300px/
+            100px 1fr 120px 130px;
+    }
+
+    .box {
+        border-radius: 6px;
+    }
+
+    .logo {
+        grid-area: logo;
+        background-color: aquamarine;
+    }
+
+    .vacio {
+        grid-area: vacio;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .busqueda {
+        grid-area: busqueda;
+        background-color: rgb(139, 139, 139);
+    }
+
+    .inicio {
+        background-color: blue;
+        grid-area: inicio;
+    }
+
+    .img {
+        width: 100%;
+        grid-area: img;
+        background-color: rgb(255, 0, 0);
+    }
+
+    .texto-grid {
+        height: 100%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .box-pod,
+    .box-biblioteca,
+    .box-descargar,
+    .box-home {
+        display: none;
+    }
+
+    .box-conte {
+        padding-top: 0;
+        padding-bottom: 30px;
+        display: grid;
+        grid-template: "tex-1   tex-2" 100%/
+            100% 100% 100%;
+    }
+
+    .tex-1 {
+
+        height: 100%;
+        border-radius: 6px;
+        background-color: aqua;
+        grid-area: tex-1;
+    }
+
+    .tex-2 {
+
+        height: 100%;
+        border-radius: 6px;
+        background-color: blue;
+        grid-area: tex-2;
+    }
+
+    .tex-3 {
+
+        border-radius: 6px;
+        background-color: blueviolet;
+        grid-area: tex-3;
+    }
+
+    p {
+        height: 100%;
+        font-size: 1em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: justify;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0 20px 0;
+    }
+
+    .cc {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        margin: 0 5% 0 5%;
+    }
 }
