@@ -39,8 +39,7 @@ nav ul li:hover .child{
     text-align: left;
 }
 .main{
-  /*  /* display:none; */
-    */
+   display:none;
 }
 .nn{
     width: 100%;
