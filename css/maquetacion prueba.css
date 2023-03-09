@@ -65,8 +65,8 @@
 
 .box-conte {
     height: 750px;
-    padding-top: 30px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 80px;
     display: grid;
     grid-template: "tex-1   tex-2   tex-3" 800px/
         450px 450px 450px;
@@ -113,15 +113,15 @@ p {
     margin: 0 5% 0 5%;
 }
 
-@media only screen and (max-width:1300px) {
+@media only screen and (max-width:1450px) {
     
     .box-header {
         visibility: visible;
         gap: 10px;
         display: grid;
-        grid-template: "logo  vacio  busqueda descargar  inicio" 80px
-                        "img  img    img      img        img" 580px/
-                        300px 1fr    200px    300px      250px;
+        grid-template: "logo  vacio  busqueda inicio" 80px
+                        "img  img    img      img" 430px/
+                        250px 1fr    170px    230px;
     }
 
     .box {
@@ -154,11 +154,6 @@ p {
         background-color: rgb(255, 0, 0);
     }
 
-    .box-descargar {
-        background-color: black;
-        grid-area: descargar;
-    }
-
     .texto-grid {
         height: 100%;
         color: white;
@@ -171,16 +166,16 @@ p {
 
     .box-home,
     .box-biblioteca,
-    .box-pod {
+    .box-pod, .box-descargar {
         display: none;
     }
 
     .cc {
-        padding-top: 20px;
+        padding-top: -5px;
         display: grid;
-        grid-template:  "tex-1 tex-2 " 700px
-        "tex-3 empty" 700px/
-        1fr 1fr;
+        grid-template:  "tex-1 tex-2 " 100fr
+                        "tex-3 empty" 100fr/
+                        1fr 1fr;
     }
 
     .tex-1 {
@@ -213,7 +208,7 @@ p {
 
 }
 
-@media only screen and (max-width:700px) {
+@media only screen and (max-width:900px) {
 
     .box-header {
         visibility: visible;
