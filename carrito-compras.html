@@ -1,21 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/carrto.css">
-    <title>CARRIO</title>
+    <title>CARRITO</title>
 </head>
-<body>
-    <div id="mainBox">
-    <ul>
-        <li>Colection</li>
-        <li>Men</li>
-        <li>Women</li>
-    </ul>
-    <div id="imgPrincipal" class="img-principal"></div>
-</div>
+
+<body id="boDy">
+    <nav>
+        <ul>
+            <li>logo</li>
+            <li>Colecciones</li>
+            <li>Hombres</li>
+            <li>Mujeres</li>
+            <li>Nosotros</li>
+            <li>car</li>
+            <li>foto</li>
+        </ul>
+    </nav>
+    <div class="barra">
+        <div class="logo"><label class="texto-grid"><span>Sneakers</span></label></div>
+        <div class="colec"><label class="texto-grid"><span>Colecciones</span></label></div>
+        <div class="men"><label class="texto-grid"><span>Hombres</span></label></div>
+        <div class="women"><label class="texto-grid"><span>Mujeres</span></label></div>
+        <div class="nosotros"><label class="texto-grid"><span>Nosotros</span></label></div>
+        <div class="carrito"><label class="texto-grid"><span>carrito</span></label></div>
+        <div class="foto"><label class="texto-grid"><span>foto</span></label></div>
+    </div>
+
+    <div id="mainBox" class="box-main">
+        <div class="img-box-main">
+            <!-- <div class="box-img-mini"> -->
+            <img id="imgBox" class="img-box" src="imagenes/img-box.jpg" alt="">
+            <!-- </div> -->
+
+            <div id="imgMini1" class="box-mini1">
+                <img id="imgMini1" class="img-mini" src="imagenes/img-mini-1.jpg" alt="">
+            </div>
+            <div id="imgMini2" class="box-mini2">
+                <img id="imgMini2" class="img-mini" src="imagenes/img-mini-2.jpg" alt="">
+            </div>
+            <div id="imgMini3" class="box-mini3">
+                <img id="imgMini3" class="img-mini" src="imagenes/img-mini-3.jpg" alt="">
+            </div>
+            <div id="imgMini4" class="box-mini4">
+                <img id="imgMini4" class="img-mini" src="imagenes/img-mini-4.jpg" alt="">
+            </div>
+        </div>
+        <div class="buy-box">
+            <div id="cantBox" class="cant-box">
+                <div id=btnResta class="icon-op btn-restar">-</div>
+                <div id="btnCant" class="icon-op cont-obj"><span id="numElem">1</span></div>
+                <div id=btnSuma class="icon-op btn-sumar">+</div>
+            </div>
+        </div>
+    </div>
+
+    <!--  
+    <div id="imgPrincipal" class="img-principal"><img class="img-principal" src="iagenes/img-pricipal.jpg" alt="">
+    </div> -->
 </body>
 <script src="js/carrito.js"></script>
+
 </html>

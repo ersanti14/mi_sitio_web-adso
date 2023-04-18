@@ -1,14 +1,140 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
+    font-family: Tahoma, sans-serif;
 }
-.img-principal{
-    background-color: cornflowerblue;
-    width: 300px;
-    height: 340px;
+.barra{
+    display: grid;
+    grid-template: "empty-1 logo  colec  men   women  nosotros  contacto  empty-2  carrito  foto  empty-3"120px /
+                    256px   250px 60px   60px  60px   60px      60px      410px      60px   60px  256px;
+}
+.logo{
+    grid-area: logo;
+    background-color:aquamarine;
+}
+.colec{
+    grid-area: colec;
+    background-color: blueviolet;
+}
+.men{
+    grid-area: men;
+    background-color: rgb(194, 129, 255);
+}
+.women{
+    grid-area: women;
+    background-color: rgb(157, 118, 194);
+}
+.nosotros{
+    grid-area: nosotros;
+    background-color: rgb(214, 0, 0);
+}
+.contacto{
+    background-color: black;
+    grid-area: contacto;
+}
+.carrito{
+    background-color: rgb(219, 23, 23);
+    grid-area: carrito;
+}
+.foto{
+    background-color: rgb(24, 206, 51);
+    grid-area: foto;
+}
+.texto-grid{
+    height: 100%;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.box-main{
+    margin: 0 230px;
+    display: grid;
+    grid-template: "img-box-main empty" /
+                    435px            1fr;
+}
+img{
+    border-radius: 10px;
+}
+.img-box-main{
+    display: grid;
+    width: 100%;
+    grid-template:  "img-box     img-box img-box    img-box img-box     img-box img-box" 435px
+                    "empty-0     empty-0 empty-0    empty-0 empty-0     empty-0 empty-0" 30px
+                    "box-mini1    empty-1 box-mini2   empty-2 box-mini3    empty-3 box-mini4" 90px/
+                    90px       25px        90px        25px     90px       25px      90px;
+}
+.img-box{
+    grid-area: img-box;
+    width: 100%;
+}
+.img-mini{
+    width: 100%;
     cursor: pointer;
 }
-.fondo-oscuro{
-    background-color: rgb(64,64,64.8);
+
+.box-mini1{
+grid-area: box-mini1;
+}
+.box-mini2{
+    grid-area: box-mini2;
+}
+.box-mini3{
+    grid-area: box-mini3;
+}
+.box-mini4{
+    grid-area: box-mini4;
+}
+.box-img-mini {
+    border: 3px solid rgb(255,125,26);
+    border-radius: 14px; 
+}
+.img-mini-act {
+    opacity: 0.4;
+}
+.cant-box{
+    flex-direction: row;
+    display: flex;
+}
+.icon-op{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    background-color: rgb(210,210,210);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    border: 2px solid whitesmoke;
+    cursor: pointer;
+}
+.btn-restar{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: rgb(255,125,26);
+    font-size: 2em;
+}
+.cant-obj{
+    color: rgb(48,48,48);
+    font-size: 1.3em;
+}
+.btn-sumar{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: rgb(255,125,26);
+    font-size: 1.5em;
+}
+.fondo-oscuro {
+    background-color: rgb(64, 64, 64.8);
     height: 100vh;
 }
+/* .img-box-main 2{
+    display: grid;
+    width: 100%;
+    grid-template:  "img-box     img-box img-box    img-box img-box     img-box img-box" 435px
+                    "empty-0     empty-0 empty-0    empty-0 empty-0     empty-0 empty-0" 30px
+                    "box-mini1    empty-1 box-mini2   empty-2 box-mini3    empty-3 box-mini4" 90px/
+                    90px       25px        90px        25px     90px       25px      90px;
+} */
