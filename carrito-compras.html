@@ -6,35 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/carrto.css">
+    <link rel="stylesheet" href="icons/all.css">
     <title>CARRITO</title>
 </head>
 
 <body id="boDy">
-    <nav>
-        <ul>
-            <li>logo</li>
-            <li>Colecciones</li>
-            <li>Hombres</li>
-            <li>Mujeres</li>
-            <li>Nosotros</li>
-            <li>car</li>
-            <li>foto</li>
-        </ul>
-    </nav>
-    <div class="barra">
-        <div class="logo"><label class="texto-grid"><span>Sneakers</span></label></div>
-        <div class="colec"><label class="texto-grid"><span>Colecciones</span></label></div>
-        <div class="men"><label class="texto-grid"><span>Hombres</span></label></div>
-        <div class="women"><label class="texto-grid"><span>Mujeres</span></label></div>
-        <div class="nosotros"><label class="texto-grid"><span>Nosotros</span></label></div>
-        <div class="carrito"><label class="texto-grid"><span>carrito</span></label></div>
-        <div class="foto"><label class="texto-grid"><span>foto</span></label></div>
+    <div id="lightBox" class="lightbox light-hidden">
+        <div class="main-lightbox">
+                <div id="btnAtras" class="btn-style btn-salir"><i class="style fa-solid fa-xmark"></i></div>
+                <div class="btn-style btn-atras"><i class="style-btn fa-solid fa-chevron-left"></i></div>
+                <div class="btn-style btn-right"><i class="style-btn fa-solid fa-chevron-right"></i></div>
+                <img class="img-main-light" src="imagenes/img-box.jpg" alt="">
+            </div>
     </div>
 
+
+    <div class="header">
+        <div class="barra">
+
+            <div class="logo">
+                <img src="imagenes/logo.41e1948d.svg" alt="">
+            </div>
+            <div class="colec">
+                <li class="texto-grid"><a>Colecciones</a></li>
+            </div>
+            <div class="men">
+                <li class="texto-grid"><a>Hombres</a></li>
+            </div>
+            <div class="women">
+                <li class="texto-grid"><a>Mujeres</a></li>
+            </div>
+            <div class="nosotros">
+                <li class="texto-grid"><a>Nosotros</a></li>
+            </div>
+            <div class="contacto">
+                <li class="texto-grid"><a>Contacto</a></li>
+            </div>
+            <div class="carrito">
+                <i class="icon-style fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div class="foto">
+                <a>foto</a>
+            </div>
+            <div class="barraPiso"></div>
+
+        </div>
+    </div>
+    <br>
+    <br>
     <div id="mainBox" class="box-main">
         <div class="img-box-main">
             <!-- <div class="box-img-mini"> -->
-            <img id="imgBox" class="img-box" src="imagenes/img-box.jpg" alt="">
+                <img id="imgBox" class="img-box" src="imagenes/img-box.jpg" alt="">
             <!-- </div> -->
 
             <div id="imgMini1" class="box-mini1">
@@ -51,6 +74,9 @@
             </div>
         </div>
         <div class="buy-box">
+            <div id="Totales" class="totales">
+                <div id="valorTotal" class="valortotal">$199.999</div>
+            </div>
             <div id="cantBox" class="cant-box">
                 <div id=btnResta class="icon-op btn-restar">-</div>
                 <div id="btnCant" class="icon-op cont-obj"><span id="numElem">1</span></div>

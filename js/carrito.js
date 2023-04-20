@@ -58,8 +58,8 @@ let imgBox = document.getElementById("imgBox");
 let imgMinis = document.querySelectorAll(".img-mini");
 
 for (let i = 0; i < imgMinis.length; i++) {
-    imgMinis[i].addEventListener("click", function() {
-        imgBox.setAttribute("src", `imagenes/img-mini-${i+1}.jpg`);
+    imgMinis[i].addEventListener("click", function () {
+        imgBox.setAttribute("src", `imagenes/img-mini-${i + 1}.jpg`);
 
         for (let j = 0; j < imgMinis.length; j++) {
             if (j === i) {
@@ -71,18 +71,20 @@ for (let i = 0; i < imgMinis.length; i++) {
     });
 }
 //fondo oscuro
-/* let boDy = document.getElementById("boDy");
+let btnAtras = document.getElementById("btnAtras")
+let lightBox = document.getElementById("lightBox");
 imgBox.addEventListener("click",function(){
-    boDy.classList.add("fondo-oscuro");    
+    lightBox.classList.remove("light-hidden");    
 });
-imgBox.addEventListener("click",function(){
-    boDy.classList.remove("fondo-oscuro");
-    });
- */
+
+btnAtras.addEventListener("click",function(){
+    lightBox.classList.add("light-hidden")
+})
+
 
 //parte 2 codigo resumido gpt
 
-let numElem = document.getElementById("numElem");
+/* let numElem = document.getElementById("numElem");
 let btnSuma = document.getElementById("btnSuma");
 let btnResta = document.getElementById("btnResta");
 
@@ -95,34 +97,62 @@ btnResta.addEventListener("click", function() {
   if (currentNum > 0) {
     numElem.textContent = currentNum - 1;
   }
-});
+}); */
 
 //codigo mio sin resumir 
 
-/* let btnResta = document.getElementById("btnResta");
+let btnResta = document.getElementById("btnResta");
 let btnSuma = document.getElementById("btnSuma");
 let cantBox = document.getElementById("cantBox");
 let btnCant = document.getElementById("btnCant");
 let numElem = document.getElementById("numElem");
 let numElemTxt = document.getElementById("numElem").innerHTML;
 
-btnSuma.addEventListener("click",function(){
+
+let valorUnitario = 199999
+let valorUnitarioTxt = valorUnitario.toString();
+
+let valorUnitarioPeso = new Intl.NumberFormat().format(valorUnitarioTxt);
+
+let cantNumTotal = valorUnitarioTxt.length;
+
+let valorTotal = document.getElementById("valorTotal");
+let valorTotalInt = 0;
+
+
+
+btnSuma.addEventListener("click", function () {
     let numElemTxt = document.getElementById("numElem").innerHTML;
     let numElemInt = parseInt(numElemTxt);
-    let totalElemInt = numElemInt + 1;
-    let totalElemtxt = totalElemInt.toString();
-    numElem.innerHTML = totalElemtxt;
+    if (numElemInt < 20) {
+        let totalElemInt = numElemInt + 1;
+        let totalElemtxt = totalElemInt.toString();
+        numElem.innerHTML = totalElemtxt;
+
+        valorTotalInt = valorUnitario * totalElemtxt;
+        valorTotal.innerHTML = "$" + new Intl.NumberFormat().format(valorTotalInt);
+
+    }
+
 });
 
-btnResta.addEventListener("click",function(){
+btnResta.addEventListener("click", function () {
     let numElemTxt = document.getElementById("numElem").innerHTML;
     let numElemInt = parseInt(numElemTxt);
     if (numElemInt > 0) {
         let totalElemInt = numElemInt - 1;
         let totalElemtxt = totalElemInt.toString();
         numElem.innerHTML = totalElemtxt;
+        
+        valorTotalInt = valorUnitario - totalElemtxt;
+        valorTotal.innerHTML = "$" + new Intl.NumberFormat().format(valorTotalInt);
+        
     }
-}); */
+});
+
+///cambiar totales suma
+//progarmacion orientada a objetos
+
 
 /// primera explicacion para cambiar el contenido de un div
 
