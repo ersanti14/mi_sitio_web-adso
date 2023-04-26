@@ -13,11 +13,13 @@
 <body id="boDy">
     <div id="lightBox" class="lightbox light-hidden">
         <div class="main-lightbox">
-                <div id="btnAtras" class="btn-style btn-salir"><i class="style fa-solid fa-xmark"></i></div>
-                <div class="btn-style btn-atras"><i class="style-btn fa-solid fa-chevron-left"></i></div>
-                <div class="btn-style btn-right"><i class="style-btn fa-solid fa-chevron-right"></i></div>
+            <div id="btnAtras" class="btn-style btn-salir"><i class="style fa-solid fa-xmark"></i></div>
+            <div class="btn-style btn-atras"><i class="style-btn fa-solid fa-chevron-left"></i></div>
+            <div class="btn-style btn-right"><i class="style-btn fa-solid fa-chevron-right"></i></div>
+            <div class="box-img-light">
                 <img class="img-main-light" src="imagenes/img-box.jpg" alt="">
             </div>
+        </div>
     </div>
 
 
@@ -43,21 +45,19 @@
                 <li class="texto-grid"><a>Contacto</a></li>
             </div>
             <div class="carrito">
-                <i class="icon-style fa-solid fa-cart-shopping"></i></a>
+                <i class="icon-style fa-solid fa-cart-shopping"></i>
             </div>
             <div class="foto">
-                <a>foto</a>
+                <img class="fotoMia" src="imagenes/Captura de pantalla 2023-04-07 111756.png" alt="">
             </div>
-            <div class="barraPiso"></div>
 
         </div>
     </div>
-    <br>
-    <br>
-    <div id="mainBox" class="box-main">
+    <!-- imagenes movimiento -->
+    <div id="mainBox" class="box-main box-main-fondo">
         <div class="img-box-main">
             <!-- <div class="box-img-mini"> -->
-                <img id="imgBox" class="img-box" src="imagenes/img-box.jpg" alt="">
+            <img id="imgBox" class="img-box" src="imagenes/img-box.jpg" alt="">
             <!-- </div> -->
 
             <div id="imgMini1" class="box-mini1">
@@ -73,17 +73,32 @@
                 <img id="imgMini4" class="img-mini" src="imagenes/img-mini-4.jpg" alt="">
             </div>
         </div>
-        <div class="buy-box">
-            <div id="Totales" class="totales">
-                <div id="valorTotal" class="valortotal">$199.999</div>
+        <div class="textoPrincipal">
+            <h3>SNEAKER COMPANY</h3>
+            <h2>Fall Limited Edition Sneakers</h2>
+            <p> These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer
+                sole,
+                they’ll withstand everything the weather can offer.</p>
+
+            <!-- parte caja de compra y botones -->
+            <div class="buy-box">
+                <div id="Totales" class="totales">
+                    <div id="valorTotal" class="valortotal">$199.999</div>
+                </div>
+                <div id="cantBox" class="cant-box">
+                    <div id=btnResta class="icon-op btn-restar">-</div>
+                    <div id="btnCant" class="icon-op cont-obj"><span id="numElem">1</span></div>
+                    <div id=btnSuma class="icon-op btn-sumar">+</div>
+                </div>
+                <div class="addCar">
+                <i class="fa-solid fa-cart-shopping"></i><p class="letrabntadd">Add to cart</p>
             </div>
-            <div id="cantBox" class="cant-box">
-                <div id=btnResta class="icon-op btn-restar">-</div>
-                <div id="btnCant" class="icon-op cont-obj"><span id="numElem">1</span></div>
-                <div id=btnSuma class="icon-op btn-sumar">+</div>
             </div>
+            
         </div>
     </div>
+
+
 
     <!--  
     <div id="imgPrincipal" class="img-principal"><img class="img-principal" src="iagenes/img-pricipal.jpg" alt="">
