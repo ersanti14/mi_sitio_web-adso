@@ -70,6 +70,12 @@ for (let i = 0; i < imgMinis.length; i++) {
         }
     });
 }
+
+//fondo ocuro mio 
+let boDy = document.getElementById("boDy")
+imgBox.addEventListener("click",function(){
+    boDy.classList.add("fondo")
+})
 //fondo oscuro
 let btnAtras = document.getElementById("btnAtras")
 let lightBox = document.getElementById("lightBox");
@@ -81,10 +87,6 @@ btnAtras.addEventListener("click", function () {
     lightBox.classList.add("light-hidden")
 })
 
-
-/* imgBox.addEventListener("click",function(){
-    lightBox.classList.add("img-box-main2");    
-}); */
 
 //parte 2 codigo resumido gpt
 
@@ -153,21 +155,6 @@ btnResta.addEventListener("click", function () {
         
     }
 });
-
-
-/* btnResta.addEventListener("click", function () {
-    let numElemTxt = document.getElementById("numElem").innerHTML; // Obtiene la cantidad actual de elementos como un string
-    let numElemInt = parseInt(numElemTxt); // Convierte el string a un número entero
-    if (numElemInt > 0) { // Verifica que la cantidad de elementos no sea negativa
-        let totalElemInt = numElemInt - 1; // Disminuye la cantidad de elementos en 1 y la guarda como un número entero
-        let totalElemtxt = totalElemInt.toString(); // Convierte la nueva cantidad de elementos a un string
-        numElem.innerHTML = totalElemtxt; // Actualiza la caja de texto de la cantidad de elementos con el nuevo valor
-
-        valorTotalInt = valorUnitario * totalElemInt; // Multiplica el valor unitario por la nueva cantidad de elementos y guarda el resultado como un número entero
-        valorTotal.innerHTML = "$" + new Intl.NumberFormat().format(valorTotalInt); // Actualiza la etiqueta de texto del valor total con el nuevo valor formateado como una cadena de texto de moneda
-    }
-}); */
-
 
 ///cambiar totales suma
 //progarmacion orientada a objetos
