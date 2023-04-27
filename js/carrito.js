@@ -59,7 +59,7 @@ let imgMinis = document.querySelectorAll(".img-mini");
 
 for (let i = 0; i < imgMinis.length; i++) {
     imgMinis[i].addEventListener("click", function () {
-        imgBox.setAttribute("src", `imagenes/img-mini-${i + 1}.jpg`);
+        imgBox.setAttribute("src", `imagenes/img-mini-${i + 1}.webp`);
 
         for (let j = 0; j < imgMinis.length; j++) {
             if (j === i) {
@@ -87,7 +87,7 @@ let currentIndex = 0;
 for (let i = 0; i < imgMinif.length; i++) {
     imgMinif[i].addEventListener("click", function () {
         // Cambiar la fuente de la imagen principal por la imagen correspondiente al índice seleccionado
-        linImg.setAttribute("src", `imagenes/img-mini-${i + 1}.jpg`);
+        linImg.setAttribute("src", `imagenes/img-mini-${i + 1}.webp`);
 
         // Cambiar la clase de las imágenes en miniatura para indicar cuál está seleccionada
         for (let j = 0; j < imgMinif.length; j++) {
@@ -111,7 +111,7 @@ btnDere.addEventListener("click", function () {
     currentIndex = (currentIndex + 1) % imgMinif.length;
 
     // Actualizar la imagen principal y las imágenes en miniatura
-    linImg.setAttribute("src", `imagenes/img-mini-${currentIndex + 1}.jpg`);
+    linImg.setAttribute("src", `imagenes/img-mini-${currentIndex + 1}.webp`);
     for (let j = 0; j < imgMinif.length; j++) {
         if (j === currentIndex) {
             imgMinif[j].classList.add("img-fondo-act");
@@ -129,7 +129,7 @@ btnIzq.addEventListener("click", function () {
     currentIndex = (currentIndex - 1 + imgMinif.length) % imgMinif.length;
 
     // Actualizar la imagen principal y las imágenes en miniatura
-    linImg.setAttribute("src", `imagenes/img-mini-${currentIndex + 1}.jpg`);
+    linImg.setAttribute("src", `imagenes/img-mini-${currentIndex + 1}.webp`);
     for (let j = 0; j < imgMinif.length; j++) {
         if (j === currentIndex) {
             imgMinif[j].classList.add("img-fondo-act");
@@ -176,11 +176,6 @@ for (let i = 0; i < btnDere; i++) {
     })
 }; */
 
-//fondo ocuro mio 
-let boDy = document.getElementById("boDy")
-imgBox.addEventListener("click", function () {
-    boDy.classList.add("fondo")
-})
 //fondo oscuro
 let btnAtras = document.getElementById("btnAtras")
 let lightBox = document.getElementById("lightBox");
