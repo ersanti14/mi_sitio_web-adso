@@ -101,8 +101,9 @@ li:hover {
 }
 
 /*IMAGENES DE TENIS MOVIMIENTO*/
+
 .box-main {
-    margin: 80px 230px;
+    margin: 50px 230px;
     display: grid;
     grid-template: "img-box-main empty"640px/
         550px 1fr;
@@ -155,70 +156,71 @@ width: 100%;
 }
 
 .img-mini-act {
-    opacity: 0.4;
+    opacity: 0.6;
 }
-/* BOTON DE ADD CART */
 
-.addCar{
-    width: 330px;
-    height: 65px;
-    background-color:rgb(255, 125, 26) ;
-    color: white;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    border-radius: 15px;
-    font-weight: 700;
-    margin: 20px;
+/* BOTON DE ADD CART */
+/*TEXTO DEL ENUNCIADOO*/
+h3{
+    padding: 15px;
+    color: rgb(255, 125, 26);
+    font-size: 1em;
 }
-.letrabntadd{
-    padding-left: 2%;
+h2{
+    font-size: 2.8em;
+    color: black;
+    padding: 15px;
+    margin-bottom: 40px;
+}
+.letratxt{
+    font-size: 1em;
+    width: 450px;
+    color: rgba(52, 52, 52, 0.849);
+    margin: 0px 0px 80px 0px;
+    line-height: 25px;
+    padding-left: 20px;
+
 }
 
 /*suma y resta de productos*/
 .buy-box{
-    display: flex;
+    top: -10px;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 20px;
     margin: 20px;
+    display: inline;
 }
 .cant-box {
     flex-direction: row;
     display: flex;
 }
-
 .icon-op {
     width: 50px;
     height: 50px;
     display: flex;
     background-color: rgb(210, 210, 210);
-    display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 900;
     border: 2px solid whitesmoke;
     cursor: pointer;
 }
-
 .valortotal {
+    padding: 20px;
     font-size: 1.7em;
     font-weight: 900;
 }
-
 .btn-restar {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     color: rgb(255, 125, 26);
     font-size: 2em;
 }
-
 .cant-obj {
     color: rgb(48, 48, 48);
     font-size: 1.3em;
 }
-
 .btn-sumar {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -231,58 +233,69 @@ width: 100%;
     background-color: rgb(255, 255, 255);
 
 }
-
-/*fondo ocsuro mio*/
-/* .box-main-fondo{
-
-}
-.box-main-fondo{
-    background-color: rgba(64, 64, 65, 0.8);
-    height: 100vh;
-    width: 100%;
+.addCar{
+    left: 150px;
+    top: -80px;
+    width: 330px;
+    height: 65px;
+    background-color:rgb(255, 125, 26) ;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
     display: flex;
-    position: fixed;
-
+    border-radius: 15px;
+    font-weight: 700;
+    margin: 20px;
+    position: relative;
+    cursor: pointer;
 }
- */
+.letrabntadd{
+    padding-left: 2%;
+}
 
 /* fondo oscuro de atras adelante */
 
 .lightbox {
     position: fixed;
     display: flex;
-    background-color: rgba(64, 64, 65, 0.8);
+    background-color: rgba(33, 33, 33, 0.84);
     height: 100vh;
     width: 100%;
     justify-content: center;
     align-items: center;
+    z-index: 20;
 }
-
 .light-hidden {
     display: none;
 }
-
 .main-lightbox {
-    width: 840px; 
-    background-color: aquamarine;
+    z-index: 20;
+    width: 563px; 
+    height: 890px;
+    justify-content: center;
+    align-items: center;
 }
-
 .box-img-light {
-    background-color: brown;
-   /*  position: relative;
-    
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
     border-radius: 20px;
-    z-index: 10; */
+    z-index: 20;
     display: grid;
-    grid-template: "img-main-light img-main-light img-main-light img-main-light img-main-light img-main-light img-main-light "700px
-    "empty-0   empty-0    empty-0    empty-0    empty-0    empty-0    empty-0"33.8px
-    "box-mini5 empty-1    box-mini6  empty-2    box-mini7  empty-3    box-mini8" 90px/
-    106.25px 25px 106.25px 25px 106.25px 25px 106.25px;  ;
+    grid-template: "img-main-light img-main-light  img-main-light img-main-light img-main-light img-main-light img-main-light img-main-light img-main-light"560px
+    "empty-0 empty-0   empty-0    empty-0    empty-0    empty-0    empty-0    empty-0 empty-0"20px
+    "empty-4 box-mini5 empty-1    box-mini6  empty-2    box-mini7  empty-3    box-mini8 empty-6"87px/
+    1fr 90px 25px 90px 25px 90px 25px 90px 1fr; 
 }
-.img-main-light{
-    width: 700px;
-        grid-area: img-main-light;
-        cursor: pointer;
+    .img-main-light{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 570px;
+    grid-area: img-main-light;
+    cursor: pointer;
     }
     
     .img-mini-fondo {
@@ -306,7 +319,17 @@ width: 100%;
         grid-area: box-mini8;
     }
 
+    .box-img-fondo {
+        border: 3px solid rgb(255, 125, 26);
+        border-radius: 14px;
+        z-index: 100;
+    }
+    
+    .img-fondo-act {
+        opacity: 0.7;
+    }
 .btn-style {
+    cursor: pointer;
     border-radius: 50%;
     height: 46px;
     width: 46px;
@@ -316,26 +339,22 @@ width: 100%;
     align-items: center;
     color: rgb(24, 24, 24);
     position: relative;
-    top: 198px;
 }
-
 .btn-atras {
     left: -25px;
-    z-index: 20;
-    top: 190px;
+    z-index: 40;
+    top: 356px;
 }
-
 .btn-right {
-    z-index: 20;
-    left: 96%;
-    top: 144px;
+    z-index: 40;
+    left: 97%;
+    top: 310px;
 }
-
 .btn-salir {
-    z-index: 20;
-    top: -10px;
+    bottom: 0;
+    z-index: 200;
+    top: 80px;
 }
-
 .style-btn {
     font-weight: 900;
     font-size: 1.3em;

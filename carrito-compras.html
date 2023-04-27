@@ -13,11 +13,13 @@
 <body id="boDy">
     <div id="lightBox" class="lightbox light-hidden">
         <div class="main-lightbox">
+
             <div id="btnAtras" class="btn-style btn-salir"><i class="style fa-solid fa-xmark"></i></div>
-            <div class="btn-style btn-atras"><i class="style-btn fa-solid fa-chevron-left"></i></div>
-            <div class="btn-style btn-right"><i class="style-btn fa-solid fa-chevron-right"></i></div>
-            <div class="box-img-light">
-                <img class="img-main-light" src="imagenes/img-box.jpg" alt="">
+            <div id="btnIzq" class="btn-style btn-atras"><i class="style-btn fa-solid fa-chevron-left"></i></div>
+            <div id="btnDere" class="btn-style btn-right"><i class="style-btn fa-solid fa-chevron-right"></i></div>
+
+            <div id="imgLinght" class="box-img-light">
+                <img id="linImg" class="img-main-light" src="imagenes/img-box.jpg" alt="">
                 <div id="imgMini5" class="box-mini5">
                     <img id="imgMini5" class="img-mini-fondo" src="imagenes/img-mini-1.jpg" alt="">
                 </div>
@@ -30,11 +32,9 @@
                 <div id="imgMini8" class="box-mini8">
                     <img id="imgMini8" class="img-mini-fondo" src="imagenes/img-mini-4.jpg" alt="">
                 </div>
-                
             </div>
         </div>
     </div>
-
 
     <div class="header">
         <div class="barra">
@@ -67,8 +67,8 @@
         </div>
     </div>
     <!-- imagenes movimiento -->
-    <div id="mainBox" class="box-main box-main-fondo">
-        <div class="img-box-main img-box-fondo">
+    <div id="mainBox" class="box-main">
+        <div class="img-box-main">
             <!-- <div class="box-img-mini"> -->
             <img id="imgBox" class="img-box" src="imagenes/img-box.jpg" alt="">
             <!-- </div> -->
@@ -86,37 +86,30 @@
                 <img id="imgMini4" class="img-mini" src="imagenes/img-mini-4.jpg" alt="">
             </div>
         </div>
-    
-        <div class="textoPrincipal">
+
+
+        <!-- parte caja de compra y botones -->
+        <div class="buy-box">
             <h3>SNEAKER COMPANY</h3>
             <h2>Fall Limited Edition Sneakers</h2>
-            <p> These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer
-                sole,
-                they’ll withstand everything the weather can offer.</p>
-
-            <!-- parte caja de compra y botones -->
-            <div class="buy-box">
-                <div id="Totales" class="totales">
-                    <div id="valorTotal" class="valortotal">$199.999</div>
-                </div>
-                <div id="cantBox" class="cant-box">
-                    <div id=btnResta class="icon-op btn-restar">-</div>
-                    <div id="btnCant" class="icon-op cont-obj"><span id="numElem">1</span></div>
-                    <div id=btnSuma class="icon-op btn-sumar">+</div>
-                </div>
-                <div class="addCar">
-                <i class="fa-solid fa-cart-shopping"></i><p class="letrabntadd">Add to cart</p>
+            <p class="letratxt"> These low-profile sneakers are your perfect casual wear companion. Featuring a
+                durable rubber outer
+                sole, they’ll withstand everything the weather can offer.</p>
+            <div id="Totales" class="totales">
+                <div id="valorTotal" class="valortotal">$199.999</div>
             </div>
+            <div id="cantBox" class="cant-box">
+                <div id=btnResta class="icon-op btn-restar">-</div>
+                <div id="btnCant" class="icon-op cont-obj"><span id="numElem">1</span></div>
+                <div id=btnSuma class="icon-op btn-sumar">+</div>
             </div>
-            
+            <div class="addCar">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p class="letrabntadd">Add to cart</p>
+            </div>
         </div>
+
     </div>
-
-
-
-    <!--  
-    <div id="imgPrincipal" class="img-principal"><img class="img-principal" src="iagenes/img-pricipal.jpg" alt="">
-    </div> -->
 </body>
 <script src="js/carrito.js"></script>
 
