@@ -2,7 +2,6 @@
     margin: 0%;
     padding: 0%;
     font-family: Tahoma, sans-serif;
-
 }
 
 .header {
@@ -19,7 +18,7 @@
     justify-content: center;
     text-align: center;
     display: grid;
-    grid-template: "empty-1 logo  colec  men    women   nosotros   contacto   empty-2    carrito  foto  empty-3" auto /
+    grid-template: "empty-1 logo  colec  men    women   nosotros   contacto   empty-2    carrito  foto  empty-3" 100% /
                     1fr     250px 110px  110px  110px   110px      110px      1fr      70px 70px 1fr;
 }
 
@@ -104,10 +103,14 @@ li:hover {
 /*IMAGENES DE TENIS MOVIMIENTO*/
 
 .box-main {
-    margin: 100px 435px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
     display: grid;
-    grid-template: "img-box-main empty"640px/
-        550px 1fr;
+    grid-template: "img-box-main empty"100%/
+        20px 1fr;
 }
 /* .img-box-main{
     grid-area: img-box-main;
@@ -117,6 +120,8 @@ img {
     border-radius: 10px;
 }
 .img-box-main{
+    align-items: center;
+    justify-content: center;
     display: grid;
     grid-template: "img-box    img-box    img-box    img-box    img-box    img-box    img-box"500px
                     "empty-0   empty-0    empty-0    empty-0    empty-0    empty-0    empty-0"33.8px
@@ -254,6 +259,11 @@ h2{
 }
 .letrabntadd{
     padding-left: 2%;
+}
+.centerr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* fondo oscuro de atras adelante */

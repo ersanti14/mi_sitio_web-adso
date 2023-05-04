@@ -1,0 +1,160 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;   
+}
+@font-face {
+    font-family: "Poppins";
+    src: url(/fonts/Poppins-Light.ttf);
+}
+
+
+.main-content{
+    top:110px;
+    justify-content: center;
+    position: absolute;
+    display:flex;
+    width: 100%;
+    height: 100vh;
+    z-index: -20;
+    overflow: hidden;
+}
+.img-spiderman1{
+    width: 80%;
+    left: 0;
+    transition: left 1s;
+}
+/* .img-spiderman2{
+    width: 100%;
+}
+.img-spiderman3{
+    width: 100%;
+
+} */
+
+.img-spiderman1:hover{
+    left: -50;
+}
+
+.flechas{
+    width: 100%;
+    top: 50%;
+    font-size: 5em;
+    display: flex;
+    position: absolute;
+    z-index: 20;
+    padding-left: 20px;
+}
+.fel-der{
+    top:48%;
+    position: fixed;
+}
+.fel-izq{
+    position: fixed;
+    top: 48%;
+    padding-left:95%;
+}
+
+/*CABEZERA*/
+.header {
+    width: 100%;
+    justify-content: center;
+    display: flex; 
+    align-items: center;
+    background-color: white;
+}
+
+.barra {
+    top: 0;
+    position: fixed;
+    background-color: white;
+    height: 110px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    grid-template: "empty-1 logo  colec  men    women   nosotros   contacto   empty-2    menu  foto  empty-3" 100%/
+                    1fr     300px 140px  110px  110px   110px      110px      1fr      70px 70px 1fr;
+}
+.icon-style {
+    color: black;
+    font-size: 2em;
+    cursor: pointer;
+}
+.logo,
+.colec,
+.men,
+.women,
+.nosotros,
+.contacto,
+.menu {
+    background-color: rgb(255, 255, 255);
+}
+.logospi{
+    width: 250px;
+}
+.logo {
+    grid-area: logo;
+}
+
+.colec {
+    height: 20px;
+    grid-area: colec;
+}
+
+.men {
+    height: 20px;
+    grid-area: men;
+}
+
+.women {
+    height: 20px;
+    grid-area: women;
+}
+
+.nosotros {
+    height: 20px;
+    grid-area: nosotros;
+}
+
+.contacto {
+    height: 20px;
+    grid-area: contacto;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.foto {
+    grid-area: foto;
+}
+.fotoMia {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+}
+
+li {
+    transition: padding 0.2s;
+}
+
+li:hover {
+    cursor: pointer;
+    padding-bottom: 36.9px;
+    border-bottom: 4px solid rgb(0, 183, 255);
+    transition: padding-bottom 0.2s;
+}
+
+.texto-grid {
+    color: rgba(36, 36, 36, 0.877);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: 700;
+    text-decoration: none;
+}
+
