@@ -9,39 +9,46 @@
     src: url(/fonts/Poppins-Light.ttf);
 }
 
+.slider-all {
+    overflow: hidden;
+    align-items: center;
+}
 
 .slider-- {
-    position: relative;
-    top: 100px;
+    height: 80vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 0px 40px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    transition: all 0.3 ease-in ;
+
+}
+.slider-- img {
     aspect-ratio: 16 / 9;
     object-fit: cover;
 }
 
-.slider-der, .slider-izq{ 
-    font-size: 3em;
+.img-spiderman1 {
+    width: 100%;
+   /*  left: 0;
+    transition: left 1s; */
 }
 
-.slider-der i, .slider-izq i{
+.img-spiderman2 {
     width: 100%;
 }
 
-.slider-screen{
-    width: 75%;
-}
-
-.slider-screen img{
+.img-spiderman3 {
     width: 100%;
+
 }
 
-
-
+/* .img-spiderman1:hover {
+    left: -50;
+}
+ */
 /*CABEZERA*/
 .header {
+    position: relative;
     width: 100%;
     justify-content: center;
     display: flex;
@@ -51,8 +58,7 @@
 
 .barra {
     top: 0;
-    position: absolute;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     height: 110px;
     width: 100%;
     align-items: center;
