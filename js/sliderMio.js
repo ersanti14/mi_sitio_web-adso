@@ -1,16 +1,30 @@
-let sliderInner = document.querySelector(".slider--"); 
+let slider = document.querySelector(".slider"); 
+let moverDer = document.querySelector(".slider-der");
+let moverIzq = document.querySelector(".slider-izq");
+let imagenes = document.querySelectorAll(".img-spiderman").length;
 
-let images = sliderInner.querySelectorAll("img");
+let contador = 0;
 
-let index = 0;
-    
-setInterval(function(){
-let percetage = index * -55;
+function moverDerecha()
+{
+    contador++;
 
-    sliderInner.style.transform ="translateX("+ percetage +"%)";
-    if (index > images.length -1 ){
-        index=0;
-    }
-    index++;
+        if(contador > imagenes -1){
+            contador=0;
+        }
+        slider.style.transition = "all 1s ease";
+    slider.style.marginLeft = `-${contador * 100}%`;
+}
 
-},1000);
+moverDer.addEventListener("click", moverDerecha);
+
+function moverIzquierda()
+{
+    contador--;
+        if( contador < 0){
+            contador = imagenes - 1;
+        }
+    slider.style.transition = "all 1s ease";
+    slider.style.marginLeft = `-${contador * 100}%`;
+}
+moverIzq.addEventListener("click", moverIzquierda);

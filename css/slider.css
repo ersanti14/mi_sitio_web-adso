@@ -19,7 +19,6 @@
     padding: 0px 40px;
     aspect-ratio: 16 / 9;
     object-fit: cover;
-    background-color: rgb(255, 255, 255);
 }
 
 .slider-der,
@@ -135,7 +134,7 @@ li {
 
 li:hover {
     cursor: pointer;
-    padding-bottom: 30px;
+    padding-bottom: 2.17vw;
     border-bottom: 4px solid rgb(0, 183, 255);
     transition: padding-bottom 0.2s;
 }
