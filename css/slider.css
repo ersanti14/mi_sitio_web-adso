@@ -1,11 +1,11 @@
 * {
     margin: 0%;
     padding: 0%;
-    font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 @font-face {
-    font-family: "Poppins";
+    font-family: Poppins;
     src: url(/fonts/Poppins-Light.ttf);
 }
 
@@ -15,8 +15,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-    padding: 0px 40px;
+    gap: 1.6vw;
+    padding: 0vw 2.08vw;
     aspect-ratio: 16 / 9;
     object-fit: cover;
 }
@@ -54,8 +54,8 @@
     position: relative;
     background-color: rgb(255, 255, 255);
     height: 5.729166666666667vw;
-    width: 100%;
-    gap: 10px;
+    width: 100vw;
+    gap: 0.52vw;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -68,6 +68,9 @@
     color: black;
     font-size: 1.9714656290531778vw;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -75,9 +78,10 @@
 .men,
 .women,
 .nosotros,
-.contacto{
+.contacto {
     height: 1.70vw;
     background-color: rgb(255, 255, 255);
+    
 }
 
 .logospi {
@@ -85,7 +89,11 @@
 }
 
 .logo {
+    height: 100%;
     grid-area: logo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .colec {
@@ -114,11 +122,18 @@
 
 .menu {
     grid-area: menu;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .foto {
     grid-area: foto;
-    height: 2.723vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .fotoMia {
@@ -126,6 +141,7 @@
     height: 2.8vw;
     border-radius: 50%;
 }
+
 li {
     list-style: none;
     transition: padding 0.2s;
@@ -135,7 +151,7 @@ li {
 li:hover {
     cursor: pointer;
     padding-bottom: 2.17vw;
-    border-bottom: 4px solid rgb(0, 183, 255);
+    border-bottom: 0.208vw solid rgb(0, 183, 255);
     transition: padding-bottom 0.2s;
 }
 

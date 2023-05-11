@@ -13,43 +13,43 @@
     position: relative;
     display: flex;
     align-items: center;
-    gap: 40px;
-    width: 90%;
     justify-content: center;
-    padding: 0px 40px;
+    gap: 2.08vw;
+    padding: 0vw 2.08vw;
     aspect-ratio: 16 / 9;
     object-fit: cover;
-    margin-left: 30px;
-
 }
 
 .slider-izq,
 .slider-der {
     width: 5%;
     z-index: 1;
+    align-items: center;
+    justify-content: center;
 }
 
 .slider-izq i,
 .slider-der i {
     font-size: 4.125vw;
+    align-items: center;
+    justify-content: center;
 }
 
-.slider-screen{
+.slider-screen {
     width: 65%;
-    border-radius: 12px;
-    box-shadow: 5px 5px 25px black;
+    border-radius: 0.62vw;
+    box-shadow: 0.260vw 0.260vw 1.30vw black;
     overflow: hidden;
-
 }
-.slider{
-    display: flex;
+
+.slider {
     width: 400%;
+    display: flex;
 }
 
-.slider .img-spiderman{
+.slider .img-spiderman {
     width: 25%;
 }
-
 
 /*CABEZERA*/
 .header {
@@ -64,20 +64,23 @@
     position: relative;
     background-color: rgb(255, 255, 255);
     height: 5.729166666666667vw;
-    width: 100%;
-    gap: 10px;
+    width: 100vw;
+    gap: 0.52vw;
     align-items: center;
     justify-content: center;
     text-align: center;
     display: grid;
     grid-template: "empty-1 logo  colec  men    women   nosotros   contacto   empty-2    menu  foto  empty-3" 100%/
-        1fr 15.625vw 7vw 5.79vw 5.79vw 5.79vw 5.79vw 1fr 3.65vw 3.65vw 1fr;
+        1fr 15.625vw 5.79vw 5.79vw 5.79vw 5.79vw 5.79vw 10% 3.65vw 3.65vw 1fr;
 }
 
 .icon-style {
     color: black;
     font-size: 1.9714656290531778vw;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -88,6 +91,7 @@
 .contacto {
     height: 1.70vw;
     background-color: rgb(255, 255, 255);
+
 }
 
 .logospi {
@@ -95,7 +99,11 @@
 }
 
 .logo {
+    height: 100%;
     grid-area: logo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .colec {
@@ -124,11 +132,18 @@
 
 .menu {
     grid-area: menu;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .foto {
     grid-area: foto;
-    height: 2.723vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .fotoMia {
@@ -142,11 +157,15 @@ li {
     transition: padding 0.2s;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
 
 li:hover {
     cursor: pointer;
     padding-bottom: 2.17vw;
-    border-bottom: 4px solid rgb(0, 183, 255);
+    border-bottom: 0.208vw solid rgb(0, 183, 255);
     transition: padding-bottom 0.2s;
 }
 
