@@ -3,34 +3,143 @@
     margin: 0%;
 }
 body {
-    background-color: rgb(196, 196, 196);
+    background-color: rgb(123, 127, 159);
 }
-.menu {
-    position:relative;
+/*CABEZERA*/
+.header {
     width: 100%;
-    background-color: rgb(35, 153, 141);
-    height: 85px;
-    display:flex;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-bottom: 0.13020833333333334vw solid rgba(116, 116, 116, 0.664);
+}
+h2{
+    font-size: 1.7vw;
+    font-family: "Poppins", sans-serif;
+    font-weight:900;
+    color: rgb(0, 81, 255);
+}
+
+.barra {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    height: 5.729166666666667vw;
+    width: 100vw;
+    gap: 0.52vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    grid-template: "empty-1 logo  colec  men    women   nosotros   contacto   empty-2    menu  foto  empty-3" 100%/
+        1fr 15.625vw 5.79vw 5.79vw 5.79vw 5.79vw 5.79vw 10% 3.65vw 3.65vw 1fr;
+}
+
+.icon-style {
+    color: black;
+    font-size: 1.9714656290531778vw;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.colec,
+.men,
+.women,
+.nosotros,
+.contacto {
+    height: 1.70vw;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.logospi {
+    width: 13.020833333333334vw;
+}
+
+.logo {
+    height: 100%;
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.colec {
+
+    grid-area: colec;
+}
+
+.men {
+
+    grid-area: men;
+}
+
+.women {
+
+    grid-area: women;
+}
+
+.nosotros {
+    grid-area: nosotros;
+}
+
+.contacto {
+
+    grid-area: contacto;
+}
+
+.menu {
+    grid-area: menu;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto {
+    grid-area: foto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fotoMia {
+    width: 2.8vw;
+    height: 2.8vw;
+    border-radius: 50%;
+}
+
+.encabezado {
+    color: rgba(36, 36, 36, 0.877);
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+.hover1:hover {
+    cursor: pointer;
+    padding-bottom: 2.17vw;
+    border-bottom: 0.208vw solid rgb(0, 81, 255);
+    transition: padding-bottom 0.2s;
+}
+
+.texto-grid {
+    color: rgba(36, 36, 36, 0.877);
+    display: flex;
     justify-content: center;
     align-items: center;
-}
-.main-menu{
-    list-style:none;
-    height: 85px;
-    display: inline-flex;
-}
-.menu-1{
-    padding: 26px;
-    display: inline;
-}
-.cont-menu{
-    font-family: "Good Times";
-    color: rgb(255, 255, 255);
+    font-size: 0.9603841536614646vw;
+    cursor: pointer;
     text-decoration: none;
-    font-size: 1.4em;
-    padding-left: 20px;
-    padding-right: 20px;
+    list-style: none;
+    transition: padding 0.2s;
+    font-family: "Poppins", sans-serif;
 }
+
+
+
 .contenido{
     padding-top: 30px;
     padding-bottom: 50px;
@@ -40,43 +149,41 @@ body {
     grid-template : "box-1 box-2 box-3"
                     "box-4 box-5 box-6"
                     "box-7 empty empty";
-    grid-template-columns: 350px 350px 350px;
+    grid-template-columns: 360px 360px 360px;
     grid-template-rows: 400px 400px 400px;
 
 }
+.box-1,.box-2,.box-3,.box-4,.box-5,.box-6,.box-7{
+    background-color: azure;
+    border-radius: 15px;
+    border: 4px solid rgb(0,81,255) ;
+}
 .box-1{
-    border: 1px solid white;
-    background-color: rgb(35, 153, 141);
+    
     grid-area: box-1;
 }
 .box-2{
-    border: 1px solid white;
-    background-color: rgb(35, 153, 141);
+    
     grid-area: box-2;
 }
 .box-3{
-    border: 1px solid white;
-    background-color: rgb(35, 153, 141);
+    
     grid-area: box-3;
 }
 .box-4{
-    border: 1px solid white;
-    background-color: rgb(35, 153, 141);
+    
     grid-area: box-4;
 }
 .box-5{
-    border: 1px solid white;
-    background-color: rgb(35, 153, 141);
+    
     grid-area: box-5;
 }
 .box-6{
-    border: 1px solid rgb(255, 255, 255);
-    background-color: rgb(35, 153, 141);
+    
     grid-area: box-6;
 }
 .box-7{
-    border: 1px solid white;
-    background-color: rgb(35, 153, 141);
+    
     grid-area: box-7;
 }
 .titu{
@@ -90,20 +197,33 @@ h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     padding: 10px;
+    color: rgb(0, 81, 255);
 }
-a{
-    color: rgb(255, 255, 255);
+.limenu{
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 1.5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 45px;
 }
 
-li:hover{
+.licontenido:hover{
     cursor: pointer;
-    background-color: rgb(0, 187, 168);
+    background-color: rgb(52, 116, 255);
 }
 @font-face {
     font-family: "Good Times";
     src: url(../fonts/good\ times\ rg.otf);
 }
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v20-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/poppins-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/poppins-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/poppins-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/poppins-v20-latin-regular.svg#Poppins') format('svg'); /* Legacy iOS */
+  }
