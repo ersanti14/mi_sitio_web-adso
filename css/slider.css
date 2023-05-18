@@ -20,6 +20,7 @@
 .slider-der,
 .slider-izq {
     font-size: 4.125vw;
+    cursor: pointer;
 }
 
 .slider-der i,

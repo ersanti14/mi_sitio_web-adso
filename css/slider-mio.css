@@ -37,6 +37,7 @@
     z-index: 1;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .slider-izq i,
