@@ -24,4 +24,25 @@ console.log(suma);
 ///
 let num3Int = parseInt(numStr);
 
-let resultado = num
+let resultado = num3Int
+
+
+console.log("operadores aricmeticos");
+
+let numArit = 6;
+let numArit2 = 8;
+
+cosole.log("SUMA NUMaRI + NUuRIT2" + numArit + numArit2);
+
+console.log("resta");
+
+console.log("numArit - numAri" ( numArit2 - numArit)); 
+ 
+//redondear numeros
+let reslDiv = numArit / numArit2;
+//redondear segun primedioa
+console.log(Math.round(reslDiv));
+//redondear hacia abajo
+console.log(Math.floor(reslDiv));
+//redondear hacia arriba
+console.log(Math.ceil(reslDiv));
