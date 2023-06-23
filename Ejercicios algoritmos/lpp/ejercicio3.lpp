@@ -1,0 +1,18 @@
+cadena [30] iniciales
+real altura
+
+inicio
+
+escriba "¿Cual es su altura?"
+llamar nueva_linea
+lea altura
+llamar nueva_Linea
+
+escriba "¿Cuales son sus iniciales?"
+llamar nueva_linea
+lea iniciales 
+llamar nueva_linea 
+
+escriba "Sus iniciales son: ", iniciales, ", y su altura es " , altura
+
+fin

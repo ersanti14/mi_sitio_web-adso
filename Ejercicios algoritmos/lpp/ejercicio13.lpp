@@ -1,0 +1,40 @@
+cadena [60] nombre, genero
+entero sueldo,tiempo,aumen15,aumen20
+
+inicio
+	Escriba "Ingrese su nombre: "
+	lea nombre
+	Llamar nueva_linea
+	Escriba "Ingrese su genero: "
+	lea genero
+	Llamar nueva_linea
+	Escriba "Ingrese su sueldo base: "
+	lea sueldo
+	Llamar nueva_linea
+	Escriba "Ingrese el tiempo que lleva en la empresa: "
+	lea tiempo
+	
+	aumen15<- sueldo*0.15+sueldo
+	aumen20<- sueldo*0.20+sueldo
+	
+	
+	si genero = "Masculino" entonces
+		si tiempo > 6 entonces
+			Escriba "Hola ",nombre," su bonificacion es de un 20%, su sueldo base ahora queda en: ",aumen20
+			sino
+			Escriba "Hola ",nombre," su bonificacion es de un 15%, su sueldo base ahora queda en: ",aumen15
+		fin si
+		sino
+			si genero = "Femenino" entonces
+				si tiempo > 5 entonces
+					Escriba "Hola ",nombre," su bonificacion es de un 20%, de su sueldo base ahora queda en: ",aumen20
+					sino
+					Escriba "Hola ",nombre," su bonificacion es de un 15%, de su sueldo base ahora queda en: ",aumen15
+				fin si
+	fin si
+	
+	fin si
+	
+	
+	fin 
+	

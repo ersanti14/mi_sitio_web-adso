@@ -1,0 +1,11 @@
+entero numero
+
+inicio
+
+escriba "Ingrese un numero"
+llamar nueva_linea
+lea numero
+
+escriba "Has introducido el numero ", numero ,", gracias"
+
+fin 

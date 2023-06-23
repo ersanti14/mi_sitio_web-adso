@@ -1,0 +1,14 @@
+entero pesos, total
+
+inicio 
+
+escriba "Ingrese la cantidad de pesos a convertir"
+llamar nueva_linea
+lea pesos
+llamar nueva_linea
+
+total <- pesos*4444
+
+escriba "El total de euros serian " , total
+
+fin

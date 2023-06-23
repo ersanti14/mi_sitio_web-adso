@@ -1,0 +1,23 @@
+real segundo, dia, hora, minuto 
+
+inicio 
+
+escriba "Ingrese la cantidad de segundos"
+llamar nueva_linea
+lea segundo 
+llamar nueva_linea
+
+dia <- segundo/86400
+hora <- segundo/3600
+minuto <- segundo/60
+
+escriba "La cantidad de dias son ", dia
+llamar nueva_linea
+
+escriba "La cantidad de horas son ", hora
+llamar nueva_linea
+
+escriba "La cantidad de minutos son ",minuto
+
+fin 
+

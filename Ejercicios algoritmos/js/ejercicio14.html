@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+        }
+        .todo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        input{
+            width: 200px;
+            margin: 5px;
+        }
+        button{
+            width: 100px;
+        }
+    </style>
+
+    <div class="todo">
+    
+    <h1> PH del suelo </h1>
+    <input type="number" id="ph" placeholder="Ingrese el ph">
+    <input type="number" id="materia" placeholder="Ingrese la materia orgániza">
+    <input type="number" id="fosforo" placeholder="Ingrese el fosforo">
+    <input type="number" id="calcio" placeholder="Ingrese el calcio">
+    <input type="number" id="magnesio" placeholder="Ingrese el magnesio">
+    <input type="number" id="potasio" placeholder="Ingrese el potasio">
+    <input type="number" id="aluminio" placeholder="Ingrese el aluminio">
+
+    <button type="submit" onclick="calcular()"> Calcular </button>
+
+    <p id="respuesta"></p>
+
+</div>
+    <script src="js/ejercicio14.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+entero base, altura, perimetro, area 
+
+inicio 
+
+escriba "Ingrese la altura del rectangulo"
+llamar nueva_Linea
+lea altura
+llamar nueva_linea
+
+escriba "Ingrese la base del rectangulo"
+llamar nueva_linea
+lea base 
+llamar nueva_linea
+
+perimetro <- (altura*2) + (base*2)
+area <- altura*base
+
+escriba "El perimetro del rectangulo es de ", perimetro, " y su area es " , area
+
+fin

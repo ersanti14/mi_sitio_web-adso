@@ -1,0 +1,26 @@
+entero dia, hora, minuto, segundos
+
+inicio 
+
+escriba "Ingrese la cantidad de dias"
+llamar nueva_linea 
+lea dia
+llamar nueva_linea
+
+escriba "Ingrese la cantidad de horas"
+llamar nueva_linea 
+lea hora
+llamar nueva_linea 
+
+escriba "Ingrese la cantidad de minutos"
+llamar nueva_linea
+lea minuto
+llamar nueva_linea
+
+segundos <- (dia*86400) + (hora*3600) + (minuto*60)
+
+escriba "La cantidad de segundos son " ,segundos
+
+fin
+
+ 

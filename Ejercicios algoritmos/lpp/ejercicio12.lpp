@@ -1,0 +1,23 @@
+cadena [40] correo,clave
+
+inicio
+	Escriba "Ingrese su correo: "
+	lea correo
+	Llamar nueva_linea
+	Escriba "Ingrese su clave: "
+	lea clave
+	Llamar nueva_linea
+	
+	si correo = "fund@gmail.com" entonces
+		si clave = "123456"entonces
+			Escriba "Bienvenidos a fundamentos de la programacion"
+			sino
+			Escriba "Contraseña inválida"
+		fin si
+		sino
+		escriba "Correo invalido"
+	
+	fin si
+	fin 
+	
+	

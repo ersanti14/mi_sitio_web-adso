@@ -1,0 +1,12 @@
+entero edad
+
+inicio 
+
+escriba "¿Cual es tu edad?"
+llamar nueva_linea
+lea edad
+llamar nueva_linea
+
+escriba "Ahora se que tienes ", edad , " anos, gracias"
+
+fin

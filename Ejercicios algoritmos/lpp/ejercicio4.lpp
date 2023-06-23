@@ -1,0 +1,19 @@
+entero precio, descuento, total
+
+inicio 
+
+escriba "¿Cual es el precio de su compra?"
+llamar nueva_linea
+lea precio 
+llamar nueva_linea 
+
+escriba "¿Cual es el descuento aplicado"
+llamar nueva_linea
+lea descuento 
+llamar nueva_linea
+
+total <- precio-(precio*descuento)/100
+
+escriba "El precio de tu compra aplicandole el descuento es de ", total
+
+fin

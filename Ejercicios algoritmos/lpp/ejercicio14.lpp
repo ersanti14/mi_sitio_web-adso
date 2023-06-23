@@ -1,0 +1,36 @@
+real ph,mo,p,ca,mg,k,al
+
+inicio
+
+	Escriba "Ingrese el ph del suelo: "
+	lea ph
+	Llamar nueva_linea
+	Escriba "Ingrese el Material Orgnico del suelo: "
+	lea mo
+	Llamar nueva_linea
+	Escriba "Ingresa el fosforo del suelo: "
+	lea p
+	Llamar nueva_linea
+	Escriba "Ingrese el calcio del suelo: "
+	lea ca
+	Llamar nueva_linea
+	Escriba "Ingrese el magnecio del suelo: "
+	lea mg
+	Llamar nueva_linea
+	Escriba "Ingresa el potasio del suelo: "
+	lea k 
+	Llamar nueva_linea
+	Escriba "Ingresa el aluminio del suelo: "
+	lea al
+	Llamar nueva_linea
+	
+	
+		si (ph > 5) y (ph < 5.5) y (mo > 8) y (p > 30) y (ca > 3) y (mg > 0.9) y (k > 0.4) y (al < 1) entonces
+			escriba "El suelo es apto para la siembra "
+			sino 
+				Escriba "El suelo no es apto para la siembra de cafe "
+				
+				fin si
+		fin 
+
+		
