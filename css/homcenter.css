@@ -1,0 +1,207 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: "Poppins", sans-serif;
+}
+
+.subarra {
+    width: 100vw;
+    height: 30px;
+    background-color: rgba(153, 153, 153, 0.719);
+}
+
+/*CABEZERA*/
+.header {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-bottom: 1.5px solid rgba(116, 116, 116, 0.336);
+}
+
+.barra {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    height: 85px;
+    width: 100vw;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: grid;
+    grid-template: "empty-1 logo  busqueda  ubicacion  carrito   cmr   user  empty-2" 100%/
+        1fr 300px 700px 170px 70px 130px 120px 1fr;
+}
+
+.logospi {
+    width: 240px;
+}
+
+.logo {
+    height: 100%;
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.busqueda {
+    grid-area: busqueda;
+    height: 50px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    width: 700px;
+    height: 40px;
+    border: 1px solid rgba(184, 184, 184, 0.651);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 2px;
+}
+.iconBuscar {
+	position: absolute;
+	left: 0;
+	padding-left: 8px;
+	top: calc(50% - 8px);
+	font-size: 1em;
+	color: rgb(0, 0, 0);
+}
+
+input[type=search] {
+	padding-left: 27px;
+	width: 100%;
+	height: 100%;
+	border: 1px solid rgb(19, 160, 0);
+	border-radius: 5px;
+	background-color: rgba(131, 223, 119, 0.664);
+}
+
+input[type=search]:focus {
+	outline: none;
+}
+
+input[type=search]:focus {
+	background-color: rgb(135, 218, 124);
+}
+
+::placeholder {
+	color: white;
+}
+
+/*ESPACIO UBICACION*/
+.ubicacion {
+    grid-area: ubicacion;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.ubi {
+    height: 30px;
+    margin-top: -15px;
+    display: flex;
+}
+
+.textoUbi {
+    justify-content: center;
+    display: inline;
+}
+
+.p4 {
+    font-size: 1.3em;
+    margin-left: -30px;
+    color: rgb(0, 183, 255);
+}
+
+.p5 {
+    margin-left: 10px;
+    font-size: 0.7em;
+}
+
+/*ESPACIO CARRITO*/
+.carrito {
+    grid-area: carrito;
+    display: flex;
+    cursor: pointer;
+}
+
+.car {
+    display: flex;
+    margin-top: -0px;
+}
+
+.bola {
+    justify-content: center;
+    display: flex;
+}
+
+.p6 {
+    color: white;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.bola {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(192, 16, 16);
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+/* ESPACIO CMR */
+
+.cmr {
+    grid-area: cmr;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.imgcmr {
+    width: 30px;
+    display: flex;
+}
+
+.p1 {
+    margin-left: -30px;
+    font-size: 0.7em;
+}
+
+.p2 {
+    margin-left: 6px;
+    font-size: 1em;
+}
+
+
+.user {
+    grid-area: user;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+
+
+a {
+    color: rgba(36, 36, 36, 0.877);
+    text-decoration: none;
+    font-size: 0.7em;
+
+}
+
+
+p {
+    font-size: 1em;
+}
