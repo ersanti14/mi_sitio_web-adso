@@ -31,11 +31,12 @@
     text-align: center;
     display: grid;
     grid-template: "empty-1 logo  busqueda  ubicacion  carrito   cmr   user  empty-2" 100%/
-        1fr 200px 580px 170px 75px 130px 120px 1fr;
+        1fr 13vw 35vw 170px 75px 130px 100px 1fr;
+
 }
 
 .logospi {
-    width: 180px;
+    width: 97%;
 }
 
 .logo {
@@ -48,238 +49,54 @@
 
 .busqueda {
     grid-area: busqueda;
-	position: absolute;
-    margin-left: 20px;
-	zoom: 100%;
-	color: rgb(0, 0, 0);
-    height: 40px;
-    width: 540px;
-}
-.iconBuscar {
-	position: absolute;
-	right: 10px;
-	padding-left: 8px;
-	top: calc(50% - 8px);
-	font-size: 1em;
-	color: rgb(0, 0, 0);
-}
-
-input[type=search] {
-    justify-content: center;
     display: flex;
+    justify-content: center;
     align-items: center;
-    position: relative;
-	padding-left: 15px;
-	width: 100%;
-	height: 100%;
-	border: 1px solid rgb(118, 118, 118);
-	border-radius: 1px;
-	background-color: rgba(255, 255, 255, 0.664);
-}
-
-input[type=search]:focus {
-	outline: none;
-}
-
-input[type=search]:focus {
-	background-color: rgb(255, 255, 255);
-}
-
-::placeholder {
-	color: rgb(0, 0, 0);
-}
-
-/*ESPACIO UBICACION*/
-.ubicacion {
-    grid-area: ubicacion;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.ubi {
-    height: 30px;
-    margin-top: -15px;
-    display: flex;
-}
-
-.textoUbi {
-    justify-content: center;
-    display: inline;
-}
-
-.p4 {
-    font-size: 1.1em;
-    margin-left: -38px;
-    color: rgb(0, 183, 255);
-}
-
-.p5 {
-    margin-left: 10px;
-    font-size: 0.7em;
-}
-
-/*ESPACIO CARRITO*/
-.carrito {
-    grid-area: carrito;
-    display: flex;
-    cursor: pointer;
-}
-
-.car {
-    display: flex;
-    margin-top: -0px;
-}
-
-.bola {
-    justify-content: center;
-    display: flex;
-}
-
-.p6 {
-    color: white;
-    justify-content: center;
-    text-align: center;
-    font-size: 0.8em;
-}
-
-.bola {
-    width: 30px;
-    height: 30px;
-    background-color: rgb(192, 16, 16);
-    border-radius: 50px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-
-/* ESPACIO CMR */
-
-.cmr {
-    grid-area: cmr;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-.imgcmr {
-    width: 30px;
-    display: flex;
-}
-
-.p1 {
-    margin-left: -24px;
-    font-size: 0.7em;
-}
-
-.p2 {
-    margin-left: 6px;
-    font-size: 0.9em;
-}
-
-
-.user {
-    grid-area: user;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-
-a {
-    color: rgba(36, 36, 36, 0.877);
-    text-decoration: none;
-    font-size: 0.7em;
-
-}
-
-
-p {
-    font-size: 0.9em;
-}
-
-@media only screen and (max-width:1000px){
-    /*CABEZERA*/
-.header {
-    position: absolute;
     width: 100%;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    border-bottom: 1.5px solid rgba(116, 116, 116, 0.336);
 }
 
-.barra {
-    position: relative;
-    background-color: rgb(169, 33, 33);
-    height: 85px;
-    width: 100vw;
-    gap: 0px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    display: grid;
-    grid-template: "empty-1 logo  busqueda   carrito     user  empty-2" 100%/
-        1fr 200px 580px 170px 75px 130px 120px 1fr;
-}
-
-.logospi {
-    width: 180px;
-}
-
-.logo {
-    height: 100%;
-    grid-area: logo;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.busqueda {
-    grid-area: busqueda;
-	position: absolute;
-    margin-left: 20px;
-	zoom: 100%;
-	color: rgb(0, 0, 0);
+.div-input-busqueda {
+    zoom: 100%;
+    color: rgb(0, 0, 0);
     height: 40px;
-    width: 540px;
+    width: 95%;
+    position: relative;
 }
+
 .iconBuscar {
-	position: absolute;
-	right: 10px;
-	padding-left: 8px;
-	top: calc(50% - 8px);
-	font-size: 1em;
-	color: rgb(0, 0, 0);
+    position: absolute;
+    right: 10px;
+    padding-left: 8px;
+    top: calc(50% - 8px);
+    font-size: 1em;
+    color: rgb(85, 85, 85);
+    cursor: pointer;
+    font-weight: 400;
 }
 
 input[type=search] {
     justify-content: center;
     display: flex;
-    align-items: center;
-    position: relative;
-	padding-left: 15px;
-	width: 100%;
-	height: 100%;
-	border: 1px solid rgb(118, 118, 118);
-	border-radius: 1px;
-	background-color: rgba(255, 255, 255, 0.664);
+    padding-left: 15px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 1px;
+    background-color: rgba(255, 255, 255, 0.664);
 }
 
 input[type=search]:focus {
-	outline: none;
-
+    outline: none;
+    box-shadow: 3px 3px 3px rgb(173, 169, 169);
 }
 
 input[type=search]:focus {
-	background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
 }
 
 ::placeholder {
-	color: rgb(0, 0, 0);
+    color: rgb(112, 112, 112);
 }
 
 /*ESPACIO UBICACION*/
@@ -356,6 +173,7 @@ input[type=search]:focus {
     align-items: center;
     cursor: pointer;
 }
+
 .imgcmr {
     width: 30px;
     display: flex;
@@ -393,4 +211,301 @@ a {
 p {
     font-size: 0.9em;
 }
+
+.header2 {
+    display: none;
+    z-index: -101;
+
+}
+
+@media only screen and (max-width:1340px) {
+    .header2 {
+        z-index: -100;
+        display: none;
+    }
+
+    /*CABEZERA*/
+    .subarra {
+        display: none;
+    }
+
+    .header {
+        position: absolute;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        border-bottom: 1.5px solid rgba(116, 116, 116, 0.336);
+    }
+
+    .barra {
+        position: relative;
+        background-color: rgb(255, 255, 255);
+        height: 85px;
+        width: 100vw;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        display: grid;
+        grid-template: "empty-1 logo busqueda  carrito cmr user  empty-2" 100%/
+            1fr 220px 35vw 70px 120px 30px 1fr;
+    }
+
+    .logospi {
+        width: 220px;
+    }
+
+    .logo {
+        height: 100%;
+        grid-area: logo;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .busqueda {
+        grid-area: busqueda;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .div-input-busqueda {
+        zoom: 100%;
+        color: rgb(0, 0, 0);
+        height: 40px;
+        width: 95%;
+        position: relative;
+    }
+
+    .iconBuscar {
+        position: absolute;
+        right: 10px;
+        padding-left: 8px;
+        top: calc(50% - 8px);
+        font-size: 1em;
+        color: rgb(85, 85, 85);
+        cursor: pointer;
+        font-weight: 400;
+    }
+
+    input[type=search] {
+        justify-content: center;
+        display: flex;
+        padding-left: 15px;
+        width: 100%;
+        height: 100%;
+        border: 1px solid rgb(194, 194, 194);
+        border-radius: 1px;
+        background-color: rgba(255, 255, 255, 0.664);
+    }
+
+    input[type=search]:focus {
+        outline: none;
+        box-shadow: 3px 3px 3px rgb(173, 169, 169);
+    }
+
+    input[type=search]:focus {
+        background-color: rgb(255, 255, 255);
+    }
+
+    ::placeholder {
+        color: rgb(112, 112, 112);
+    }
+
+
+    /* /*ESPACIO UBICACION*/
+    .ubicacion {
+        display: none;
+
+    }
+
+    .ubi {
+        display: none;
+    }
+
+    .textoUbi2 {
+        display: none;
+        visibility: hidden;
+    }
+
+    .p4 {
+        font-size: 1.1em;
+        margin-left: -38px;
+        color: rgb(0, 183, 255);
+    }
+
+    .p5 {
+        margin-left: 10px;
+        font-size: 0.7em;
+    }
+
+    /*ESPACIO CARRITO*/
+    .carrito {
+        grid-area: carrito;
+        display: flex;
+        cursor: pointer;
+    }
+
+    .car {
+        display: flex;
+        margin-top: -0px;
+    }
+
+    .bola {
+        justify-content: center;
+        display: flex;
+    }
+
+    .p6 {
+        color: white;
+        justify-content: center;
+        text-align: center;
+        font-size: 0.8em;
+    }
+
+    .bola {
+        width: 30px;
+        height: 30px;
+        background-color: rgb(192, 16, 16);
+        border-radius: 50px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    /* ESPACIO CMR */
+
+    .cmr {
+        grid-area: cmr;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .imgcmr {
+        width: 30px;
+        display: flex;
+
+    }
+
+    .p1 {
+        margin-left: -24px;
+        font-size: 0.7em;
+    }
+
+    .p2 {
+        margin-left: 6px;
+        font-size: 0.9em;
+    }
+
+
+
+    .user {
+        grid-area: user;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+
+    a {
+        color: rgba(36, 36, 36, 0.877);
+        text-decoration: none;
+        font-size: 0.7em;
+
+    }
+
+
+    .p7 {
+        font-size: 0.9em;
+        display: none;
+    }
+}
+
+
+/*segundo media*/
+@media only screen and (max-width:750px) {
+
+    /*CABEZERA*/
+    .header {
+        display: none;
+        z-index: -30;
+    }
+
+    .header2 {
+        z-index: 10;
+        position: absolute;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        border-bottom: 1.5px solid rgba(116, 116, 116, 0.336);
+    }
+
+    .barra2 {
+        position: relative;
+        background-color: rgb(255, 255, 255);
+        height: 65px;
+        width: 100vw;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        display: grid;
+        grid-template: "empty-1 menu logohom empty-2 lupab user2 empty-3" 100%/
+            20px 50px 40px 1fr 40px 40px 20px;
+    }
+
+    .menu {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        height: 100%;
+        grid-area: menu;
+        cursor: pointer;
+    }
+
+    .icon-style {
+        font-size: 1.8em;
+    }
+
+    .logohom {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        height: 100%;
+        grid-area: logohom;
+    }
+
+    .hom {
+        display: flex;
+        width: 35px;
+        height: 28px;
+    }
+    .peque {
+        width: 100%;
+        height: 100%;
+    }
+    .lupab {
+        display: flex;
+        grid-area: lupab;
+        cursor: pointer;
+    }
+    .buscar1{
+        font-size: 1.6em;
+    }
+
+    .user2 {
+        display: flex;
+        grid-area: user2;
+
+    }
 }
