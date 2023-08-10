@@ -31,7 +31,7 @@ a{
     display: inline-block;
     padding: 27px 40px;
 }
-.main-nav>++.sub-menu-1 .sub-main a{
+.main-nav>.sub-menu-1 .sub-main a{
     text-decoration: none;
 }
 /*.main-nav>.main-menu>.menu-1>a>.icon-chevron-small-down> .main-menu2 .menu-2 a ul li a{
