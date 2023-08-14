@@ -2,9 +2,11 @@
     padding: 0%;
     margin: 0%;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
+
 .fondo {
     width: 100%;
     height: 100%;
@@ -130,7 +132,8 @@ h2 {
 .hover1:hover {
     cursor: pointer;
     padding-bottom: 2.17vw;
-    border-bottom: 0.208vw solid rgb(14, 246, 204);;
+    border-bottom: 0.208vw solid rgb(14, 246, 204);
+    ;
     transition: padding-bottom 0.2s;
 }
 
@@ -147,6 +150,40 @@ h2 {
     font-family: "Poppins", sans-serif;
 }
 
+/*SOBRE MI*/
+.Sobremi {
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.sobre {
+    padding: 40px;
+    width: 1300px;
+    height: 800px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.foto2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 480px;
+    height: 350px;
+    background-color: blue;
+}
+
+.ftamaño {
+    height: 90%;
+    width: 90%;
+    border-radius: 30%;
+}
 
 
 .contenido {
@@ -172,7 +209,8 @@ h2 {
 .box-7 {
     background-color: rgba(255, 255, 255, 0.582);
     border-radius: 15px;
-    border: 4px solid rgb(58, 79, 80);;
+    border: 4px solid rgb(58, 79, 80);
+    ;
 }
 
 .box-1 {
@@ -224,7 +262,8 @@ h1 {
     color: rgb(14, 246, 204);
     text-shadow: 3px 3px 3px rgb(33, 43, 44);
 }
-.licontenido{
+
+.licontenido {
     display: block;
     text-align: center;
     padding: 5px 20px;
