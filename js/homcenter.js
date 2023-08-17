@@ -20,17 +20,35 @@ document.addEventListener("DOMContentLoaded", function () {
         mobileClose.classList.toggle("mobileBuscar");
     });
 
-    var Anaclose = document.querySelector(".containerAna");
-    var main_ana = document.querySelector(".anaContainer");
-    var campoChat = document.querySelector(".campoAnaClose")
+    let Anaclose = document.querySelector(".containerAna");
+    let main_ana = document.querySelector(".anaContainer");
+    let campoChat = document.querySelector(".campoAnaClose")
+    let closeAna = document.querySelector(".closeAna");
 
     Anaclose.addEventListener("click", function () {
         main_ana.classList.toggle("ocuAna");
         campoChat.classList.toggle("campoAnaClose");
 
-        // Cambia las clases "containerAna" y "campoAna" al mismo tiempo
         main_ana.classList.toggle("containerAna");
         campoChat.classList.toggle("campoAna");
+
+        closeAna.addEventListener.toggle("close");
+        closeAna.addEventListener.toggle("closeAna")
+
+    });
+
+    closeAna.addEventListener("click", function () {
+
+        main_ana.classList.toggle("ocuAna");
+        campoChat.classList.toggle("campoAnaClose");
+
+        main_ana.classList.toggle("containerAna");
+        campoChat.classList.toggle("campoAna");
+
+        closeAna.addEventListener.toggle("close");
+        closeAna.addEventListener.toggle("closeAna")
+        
+        
     });
 
 
