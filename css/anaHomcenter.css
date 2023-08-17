@@ -3,90 +3,202 @@
     padding: 0%;
     font-family: "Poppins", sans-serif;
 }
-.containerAna{
+
+.tamañoAna {
+    width: 430px;
+    height: 65%;
+    bottom: 2.5%;
+    right: 1.5%;
     position: fixed;
-    z-index: 2;
-    right: 0%;
-    margin-right: 30px;
-    margin-bottom: 17.5px;
-    bottom: 0;
-    width: 99px;
-    height: 63px;
 }
-.ocuAna{
+
+.containerAna {
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    z-index: 2;
+    width: 100px;
+    margin-top: 7px;
+    height: 63px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: aqua; 
+}
+
+.ocuAna {
     display: none;
     position: none;
     visibility: hidden;
 }
-.ana{
+
+.fotoAna {
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    width: 99px;
+    height: 63px;
+}
+
+.ana {
     justify-content: center;
     display: flex;
     width: 100%;
-    height: 61px;
+    height: 100%;
     cursor: pointer;
 }
 
 /*ICONO X*/
-.closeAna{
+.closeAna {
     position: fixed;
     border-radius: 50%;
-    width: 100px;
+    width: 50px;
     height: 50px;
     right: 0%;
-    margin-right: 30px;
-    margin-bottom: 22.2px;
-    bottom: 0;
-    background-color: black;
+    margin-right: 1.5%;
+    bottom: 2.5%;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 1px 1px 15px rgb(124, 132, 139);
 }
-.close{
+
+.closeX:hover {
+    background-color: white;
+}
+
+.closeX {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgb(0, 93, 173);
+    cursor: pointer;
+}
+
+.close {
     display: none;
 }
-.icon{
+
+.icon {
     color: white;
     justify-content: center;
     align-items: center;
     text-align: center;
     display: flex;
+    padding: 9px;
+    border-radius: 54%;
 }
-.campoAna{
-    position: fixed;
-    right: 2%;
-    bottom: 8.5%;
-    width: 420px;
-    height: 580px;
-    background-color: aqua;
-    border-radius: 20PX;
+
+.icon:hover {
+    color: rgb(0, 93, 173);
 }
-.campoAnaClose{
+
+.campoAna {
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: 100%;
+    background-color: rgb(201, 231, 255);
+    border-radius: 20px;
+    bottom: 63px;
+}
+
+.campoAnaClose {
     display: none;
     position: none;
     visibility: hidden;
 }
+
 /*HEADER TEXT ANA*/
-.espaAna{
+.espaAna {
+    position: absolute;
     top: 0;
     width: 100%;
     height: 80px;
-    background-color: blue;
+    background-color: rgb(0, 93, 173);
     border-radius: 12px 12px 0px 0px;
+    align-items: center;
+    padding: 0px 0px 0px 14px;
+    display: flex;
 }
-.texAna{
-    border: 1px solid black;
-    background-color: rgb(104, 8, 8);
+.tituloAna{
+    align-items: center;
+    display: flex;
+    color: white;
+    margin-left: 14px;
+    font-size: 1.25em;
+    font-weight: 300;
+}
+
+.texAna {
     position: absolute;
+    background-color: rgb(210, 253, 255);
     bottom: 0;
     width: 100%;
     height: 55px;
     display: flex;
     justify-content: center;
     text-align: center;
+    
 }
-.tex1
-{
+.iconoAna{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    left: 0;
+}
+
+.tex1 {
     outline: none;
     width: 90%;
-    background-color: aqua  ;
+    background-color: rgb(255, 255, 255);
 }
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/poppins-v20-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* poppins-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* poppins-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/poppins-v20-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* poppins-600 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* poppins-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/poppins-v20-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* poppins-800 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/poppins-v20-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
