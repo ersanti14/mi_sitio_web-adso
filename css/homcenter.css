@@ -3,7 +3,6 @@
     padding: 0%;
     font-family: "Poppins", sans-serif;
 }
-
 .subarra {
     width: 100vw;
     height: 25px;
@@ -25,18 +24,16 @@
     background-color: rgb(255, 255, 255);
     height: 85px;
     width: 100vw;
-    gap: 0px;
     align-items: center;
     justify-content: center;
     text-align: center;
     display: grid;
     grid-template: "empty-1 logo  busqueda  ubicacion  carrito   cmr   user  empty-2" 100%/
         1fr 13vw 35vw 170px 75px 130px 100px 1fr;
-
 }
 
 .logospi {
-    width: 97%;
+    width: 99%;
 }
 
 .logo {
@@ -108,29 +105,24 @@ input[type=search]:focus {
     justify-content: center;
     cursor: pointer;
 }
-
 .ubi {
     height: 30px;
     margin-top: -15px;
     display: flex;
 }
-
 .textoUbi {
     justify-content: center;
     display: inline;
 }
-
 .p4 {
     font-size: 1.1em;
     margin-left: -38px;
     color: rgb(0, 183, 255);
 }
-
 .p5 {
     margin-left: 10px;
     font-size: 0.7em;
 }
-
 /*ESPACIO CARRITO*/
 .carrito {
     grid-area: carrito;
@@ -218,7 +210,7 @@ p {
 
 }
 
-@media only screen and (max-width:1340px) {
+@media only screen and (max-width:1240px) {
     .header2 {
         z-index: -100;
         display: none;
@@ -253,7 +245,7 @@ p {
     }
 
     .logospi {
-        width: 220px;
+        width: 190px;
     }
 
     .logo {
@@ -500,12 +492,74 @@ p {
         cursor: pointer;
     }
     .buscar1{
-        font-size: 1.6em;
+        font-size: 1.5em;
     }
 
     .user2 {
         display: flex;
         grid-area: user2;
+        cursor: pointer ;
+    }
+    /*CONT BSUQUEDA*/
+
+    .mobileClose{
+        display: none;
+        visibility: hidden;
 
     }
+    .mobileBuscar{
+        top:0;
+        background-color: rgb(255, 255, 255);
+        width: 100vw;
+        height: 66px;
+        z-index: 40;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        border-bottom: 2px solid rgb(163, 163, 163);
+    }
+    .busSearch{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: 10px;
+    }
+    .bus-2{
+        margin: 0px 10px 0px 10px;
+        width: 85%;
+        padding: 5px;
+        height: 53px;
+        color: rgba(40, 40, 40, 0.764);
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        font-size: 1em;
+    }
+    input[type=text]:focus {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .buscar2{
+        cursor: pointer ;
+        color: rgb(61, 61, 61);
+        font-weight: 200;
+        font-size: 1.5em;
+    }
+
+    .close1{
+        cursor: pointer;
+        width: 35px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        height: 35px;
+    }
+    .icon2{
+        color: black;
+    }
+
 }

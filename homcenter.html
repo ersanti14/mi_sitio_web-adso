@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="css/homcenter.css">
     <link rel="stylesheet" href="icons/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    <link rel="icon" class="iii" href="imagenes/sodimac-logo-6.png">
+    <link rel="stylesheet" href="css/anaHomcenter.css">
 </head>
 
 <body>
     <header>
         <div class="subarra"> </div>
-
+        <link rel="icon" href="imagenes/logoCabezera.svg">
         <nav class="header">
             <div class="barra">
                 <div class="logo">
@@ -70,7 +72,7 @@
             </div>
         </nav>
 
-        <nav class="header2">
+        <nav class="header2" id="men">
             <div class="barra2">
                 <div class="menu">
                     <i class="icon-style fa-solid fa-bars"></i>
@@ -80,21 +82,62 @@
                         <img class="peque" src="imagenes/sodimac-logo-6.png" alt="">
                     </div>
                 </div>
-                <div class="lupab">
+                <div class="lupab" id="close">
                     <i class="buscar1 fa-solid fa-magnifying-glass"></i>
                 </div>
                 <div class="user2">
-                    <svg viewBox="0 0 60 60" class="account_svg__sizeLogin" height="40" width="35">
+                    <svg viewBox="0 0 60 60" class="account_svg__sizeLogin" height="40" width="38">
                         <path class="account_svg__st0"
                             d="M35.8 26c2.3-1.8 3.8-4.6 3.8-7.7 0-5.4-4.4-9.7-9.7-9.7-5.4 0-9.7 4.4-9.7 9.7 0 3.1 1.5 5.9 3.7 7.7-5.5 1.4-9.4 4.6-9.4 8.3V53.1H45V34.3c0-3.8-3.8-7-9.2-8.3zm-13-7.7c0-3.8 3.1-7 7-7 3.8 0 7 3.1 7 7s-3.1 7-7 7c-3.9-.1-7-3.2-7-7zm19.5 32H17.2v-16c0-1.4 1.1-2.8 3.1-4 2.4-1.4 5.9-2.3 9.4-2.3s7 .8 9.4 2.3c2 1.2 3.1 2.6 3.1 4v16z">
                         </path>
                     </svg>
                 </div>
             </div>
+
+            <div class="mobileClose">
+                <div class="busSearch">
+                    <i class="buscar2 fa-solid fa-magnifying-glass"></i><input class="bus-2" type="text" id="textBus"
+                        placeholder="¿Qué estas buscando?">
+                    <div class="close1"><svg xmlns="http://www.w3.org/2000/svg" class="icon2 icon-tabler icon-tabler-x"
+                            width="25" height="24" viewBox="0 0 24 24" stroke-width="1.3" stroke="currentColor"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M18 6l-12 12"></path>
+                            <path d="M6 6l12 12"></path>
+                        </svg></div>
+                </div>
+            </div>
         </nav>
     </header>
+    <div class="anaContainer">
+        <div class="containerAna">
+            <div class="fotoAna">
+                <img class="ana" src="imagenes/avatar-ana.png" alt="">
+            </div>
+        </div>
+        <div class="campoAnaClose">
+            <div class="espaAna">
+                <h2 class="tituloAna">Homecenter</h2>
+            </div>
+            <div class="texAna">
+                <input class="tex1" type="text" placeholder="Escribe aquí...">
+            </div>
+        </div>
+    </div>
+    
+    <div class="closeAna">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="35" height="34"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 6l-12 12"></path>
+            <path d="M6 6l12 12"></path>
+        </svg>
+    </div>
+
+
 
 </body>
-
+<script src="js/homcenter.js"></script>
 
 </html>

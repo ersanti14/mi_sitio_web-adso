@@ -159,14 +159,37 @@ h2 {
 }
 
 .sobre {
-    padding: 40px;
+    border-radius: 20px;
+    position: relative;
+    padding: 30px;
     width: 1300px;
     height: 800px;
-    background-color: aqua;
+    background-color: rgba(151, 193, 193, 0.696);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.tituloPri {
+    top: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.titulo {
+    font-size: 3em;
+    text-align: justify;
+}
+
+.conte2 {
+    width: 500px;
+    height: 400px;
+    display: flex;
+    font-size: 1.5em;
 }
 
 .foto2 {
@@ -175,14 +198,78 @@ h2 {
     justify-content: center;
     align-items: center;
     width: 480px;
-    height: 350px;
-    background-color: blue;
+    height: 350px
 }
 
 .ftamaño {
     height: 90%;
     width: 90%;
     border-radius: 30%;
+}
+
+.orgIconos {
+    position: absolute;
+    bottom: 0px;
+    bottom: 50px;
+    display: flex;
+    width: 650px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+}
+
+.iconos {
+    bottom: 5%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    gap: 10px;
+    display: grid;
+    grid-template: "ico1 ico2 ico3 ico4 ico5" 100px/
+        120px 120px 120px 120px 120px;
+}
+
+.ico1 {
+    display: flex;
+    background-color: purple;
+    grid-area: ico1;
+    justify-content: center;
+}
+
+.ico2 {
+    display: flex;
+    background-color: red;
+    grid-area: ico2;
+    justify-content: center;
+    justify-content: center;
+}
+
+.ico3 {
+    display: flex;
+    background-color: blue;
+    grid-area: ico3;
+    justify-content: center;
+    align-items: center;
+}
+
+.ico4 {
+    display: flex;
+    background-color: azure;
+    grid-area: ico4;
+    justify-content: center;
+}
+
+.ico5 {
+    display: flex;
+    background-color: aqua;
+    grid-area: ico5;
+    justify-content: center;
 }
 
 

@@ -1,0 +1,89 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: "Poppins", sans-serif;
+}
+.containerAna{
+    position: fixed;
+    z-index: 2;
+    right: 0%;
+    margin-right: 30px;
+    margin-bottom: 17.5px;
+    bottom: 0;
+    width: 99px;
+    height: 63px;
+}
+.ocuAna{
+    display: none;
+    position: none;
+    visibility: hidden;
+}
+.ana{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    height: 61px;
+    cursor: pointer;
+}
+
+/*ICONO X*/
+.closeAna{
+    position: fixed;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    right: 0%;
+    margin-right: 30px;
+    margin-bottom: 22.2px;
+    bottom: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+.campoAna{
+    position: fixed;
+    right: 2%;
+    bottom: 11.5%;
+    width: 420px;
+    height: 500px;
+    background-color: aqua;
+    border-radius: 20PX;
+}
+.campoAnaClose{
+    display: none;
+    position: none;
+    visibility: hidden;
+}
+/*HEADER TEXT ANA*/
+.espaAna{
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: blue;
+    border-radius: 12px 12px 0px 0px;
+}
+.texAna{
+    border: 1px solid black;
+    background-color: rgb(104, 8, 8);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.tex1
+{
+    outline: none;
+    width: 90%;
+    background-color: aqua  ;
+}
