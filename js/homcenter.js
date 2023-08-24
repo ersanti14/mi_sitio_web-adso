@@ -20,48 +20,24 @@ document.addEventListener("DOMContentLoaded", function () {
         mobileClose.classList.toggle("mobileBuscar");
     });
 
-    /* let Anaclose = document.querySelector(".containerAna");
-    let main_ana = document.querySelector(".anaContainer");
-    let campoChat = document.querySelector(".campoAnaClose")
-    let closeAna = document.querySelector(".closeAna");
-
-    Anaclose.addEventListener("click", function () {
-        main_ana.classList.toggle("ocuAna");
-        campoChat.classList.toggle("campoAnaClose");
-
-        main_ana.classList.toggle("containerAna");
-        campoChat.classList.toggle("campoAna");
-
-        closeAna.addEventListener.toggle("close");
-        closeAna.addEventListener.toggle("closeAna")
-
-    });
-
-    closeAna.addEventListener("click", function () {
-
-        main_ana.classList.toggle("ocuAna");
-        campoChat.classList.toggle("campoAnaClose");
-
-        main_ana.classList.toggle("containerAna");
-        campoChat.classList.toggle("campoAna");
-
-        closeAna.addEventListener.toggle("close");
-        closeAna.addEventListener.toggle("closeAna")
-    }); */
-
-
-
+    let contPrincipal = document.getElementById("containerTodo");
     let idAnaContainer = document.getElementById("idAnaContainer");
-    let idCampoAnaClose = document.getElementById("idCampoAnaClose");
+    let idcampoElemets = document.getElementById("idcampoElemets");
     let iconClose = document.getElementById("iconClose");
 
-    imgAna.addEventListener("click", function () {
-        if (idCampoAnaClose.classList.contains("campoAnaClose")) {
-            idCampoAnaClose.classList.remove("campoAnaClose");
-            idCampoAnaClose.classList.add("campoAna");
+    clickAna.addEventListener("click", function () {
+
+        
+        if (idcampoElemets.classList.contains("campoElemets")) {
+            idcampoElemets.classList.remove("campoElemets");
+            idcampoElemets.classList.add("campoAna");
+            contPrincipal.classList.remove("containerPricipal")
+            contPrincipal.classList.add("containerPricipalClose")
         } else {
-            idCampoAnaClose.classList.add("campoAnaClose");
-            idCampoAnaClose.classList.remove("campoAna");
+            idcampoElemets.classList.add("campoElemets");
+            idcampoElemets.classList.remove("campoAna");
+            contPrincipal.classList.remove("containerPricipalCLose")
+            contPrincipal.classList.add("containerPricipal")
         }
         iconClose.classList.remove("close");
         iconClose.classList.add("closeAna");
@@ -69,12 +45,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     })
     iconClose.addEventListener("click", function () {
-        if (idCampoAnaClose.classList.contains("campoAnaClose")) {
-            idCampoAnaClose.classList.remove("campoAnaClose");
-            idCampoAnaClose.classList.add("campoAna");
+        if (idcampoElemets.classList.contains("campoElemets")) {
+            idcampoElemets.classList.remove("campoElemets");
+            idcampoElemets.classList.add("campoAna");
+            contPrincipal.classList.remove("containerPricipal")
+            contPrincipal.classList.add("containerPricipalCLose")
         } else {
-            idCampoAnaClose.classList.add("campoAnaClose");
-            idCampoAnaClose.classList.remove("campoAna");
+            idcampoElemets.classList.add("campoElemets");
+            idcampoElemets.classList.remove("campoAna");
+            contPrincipal.classList.remove("containerPricipalCLose")
+            contPrincipal.classList.add("containerPricipal")
         }
         iconClose.classList.add("close");
         iconClose.classList.remove("closeAna");

@@ -29,7 +29,7 @@
     text-align: center;
     display: grid;
     grid-template: "empty-1 logo  busqueda  ubicacion  carrito   cmr   user  empty-2" 100%/
-        1fr 13vw 35vw 170px 75px 130px 100px 1fr;
+        1fr 13vw 35vw 170px 75px 130px 120px 1fr;
 }
 
 .logospi {
@@ -69,7 +69,7 @@
     font-size: 1em;
     color: rgb(85, 85, 85);
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 input[type=search] {
@@ -118,11 +118,11 @@ input[type=search]:focus {
     font-size: 1.1em;
     margin-left: -38px;
     color: rgb(0, 183, 255);
-    font-weight: 600;
+    font-weight: 400;
 }
 .p5 {
     margin-left: 10px;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 0.7em;
 }
 /*ESPACIO CARRITO*/
@@ -147,7 +147,7 @@ input[type=search]:focus {
     justify-content: center;
     text-align: center;
     font-size: 0.8em;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .bola {
@@ -177,13 +177,13 @@ input[type=search]:focus {
 .p1 {
     margin-left: -24px;
     font-size: 0.7em;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .p2 {
     margin-left: 6px;
     font-size: 0.9em;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 
@@ -201,14 +201,14 @@ a {
     color: rgba(36, 36, 36, 0.877);
     text-decoration: none;
     font-size: 0.7em;
-    font-weight: 600;
+    font-weight: 400;
 
 }
 
 
 p {
     font-size: 0.9em;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .header2 {
@@ -248,7 +248,7 @@ p {
         text-align: center;
         display: grid;
         grid-template: "empty-1 logo busqueda  carrito cmr user  empty-2" 100%/
-            1fr 220px 35vw 70px 120px 30px 1fr;
+            1fr 220px 35vw 70px 125px 40px 1fr;
     }
 
     .logospi {
@@ -286,7 +286,7 @@ p {
         padding-left: 8px;
         top: calc(50% - 8px);
         font-size: 1em;
-        font-weight: 600;
+        font-weight: 400;
         color: rgb(85, 85, 85);
         cursor: pointer;
     }
@@ -333,7 +333,7 @@ p {
 
     .p4 {
         font-size: 1.1em;
-        font-weight: 600;
+        font-weight: 400;
         margin-left: -38px;
         color: rgb(0, 183, 255);
     }
@@ -341,7 +341,7 @@ p {
     .p5 {
         margin-left: 10px;
         font-size: 0.7em;
-        font-weight: 600;
+        font-weight: 400;
     }
 
     /*ESPACIO CARRITO*/
@@ -365,7 +365,7 @@ p {
         color: white;
         justify-content: center;
         text-align: center;
-        font-weight: 600;
+        font-weight: 400;
         font-size: 0.8em;
     }
 
@@ -397,11 +397,11 @@ p {
     .p1 {
         margin-left: -24px;
         font-size: 0.7em;
-        font-weight: 600;
+        font-weight: 400;
     }
 
     .p2 {
-        font-weight: 600;
+        font-weight: 400;
         margin-left: 6px;
         font-size: 0.9em;
     }
@@ -410,6 +410,7 @@ p {
 
     .user {
         grid-area: user;
+        width: 100%;
         height: 100%;
         display: flex;
         align-items: center;
@@ -422,14 +423,14 @@ p {
         color: rgba(36, 36, 36, 0.877);
         text-decoration: none;
         font-size: 0.7em;
-        font-weight: 600;
+        font-weight: 400;
 
     }
 
 
     .p7 {
         font-size: 0.9em;
-        font-weight: 600;
+        font-weight: 400;
         display: none;
     }
 }
@@ -507,7 +508,7 @@ p {
     }
     .buscar1{
         font-size: 1.5em;
-        font-weight: 600;
+        font-weight: 400;
     }
 
     .user2 {
@@ -553,7 +554,7 @@ p {
         outline: none;
         border: none;
         font-size: 1em;
-        font-weight: 600;
+        font-weight: 400;
     }
     input[type=text]:focus {
         background-color: rgb(255, 255, 255);
