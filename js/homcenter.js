@@ -20,6 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
         mobileClose.classList.toggle("mobileBuscar");
     });
 
+
+    
+
     let contPrincipal = document.getElementById("containerTodo");
     let idAnaContainer = document.getElementById("idAnaContainer");
     let idcampoElemets = document.getElementById("idcampoElemets");
@@ -48,13 +51,13 @@ document.addEventListener("DOMContentLoaded", function () {
         if (idcampoElemets.classList.contains("campoElemets")) {
             idcampoElemets.classList.remove("campoElemets");
             idcampoElemets.classList.add("campoAna");
-            contPrincipal.classList.remove("containerPricipal")
-            contPrincipal.classList.add("containerPricipalCLose")
+            contPrincipal.classList.add("containerPricipal")
+            contPrincipal.classList.remove("containerPricipalCLose")
         } else {
             idcampoElemets.classList.add("campoElemets");
             idcampoElemets.classList.remove("campoAna");
-            contPrincipal.classList.remove("containerPricipalCLose")
-            contPrincipal.classList.add("containerPricipal")
+            contPrincipal.classList.add("containerPricipalCLose")
+            contPrincipal.classList.remove("containerPricipal")
         }
         iconClose.classList.add("close");
         iconClose.classList.remove("closeAna");
