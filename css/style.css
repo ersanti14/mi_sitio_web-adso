@@ -12,15 +12,21 @@ html {
     height: 100%;
     position: fixed;
     z-index: -2;
+    top: 0%;
 }
 
 /*CABEZERA*/
 .header {
     width: 100%;
+    height: 5.729166666666667vw;
     justify-content: center;
     display: flex;
     align-items: center;
+    top: 0%;
+    z-index: 2;
+    background-color: #1b2223;
     border-bottom: 0.13020833333333334vw solid rgba(116, 116, 116, 0.664);
+    position: fixed;
 }
 
 h2 {
@@ -33,7 +39,7 @@ h2 {
 .barra {
     position: relative;
     background-color: #1b2223;
-    height: 5.729166666666667vw;
+    height: 100%;
     width: 100vw;
     gap: 0.52vw;
     align-items: center;
@@ -152,10 +158,11 @@ h2 {
 
 /*SOBRE MI*/
 .Sobremi {
-    margin-top: 30px;
+    margin-top: 150px;
     justify-content: center;
     align-items: center;
     display: flex;
+    position: relative;
 }
 
 .sobre {
