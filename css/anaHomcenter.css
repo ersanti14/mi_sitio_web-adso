@@ -4,29 +4,11 @@
     font-family: "Poppins", sans-serif;
 }
 
-.containerPricipal {
-    width: 100px;
-    height: 63px;
-    bottom: 2.5%;
-    border-radius: 9px;
-    right: 1.5%;
-    position: fixed;
-}
-.containerPricipalClose {
-    width: 405px;
-    height: 85%;
-    bottom: 2.5%;
-    right: 1.5%;
-    position: fixed;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    background-color: aqua;
-}
+/*anaPeque/*/
 .containerAna {
-    position:absolute;
-    bottom: 0;
-    right: 0;
+    position:fixed;
+    bottom: 2.5%;
+    right: 1.5%;
     display: flex;
     z-index: 2;
     width: 100px;
@@ -39,15 +21,12 @@
     position: none;
     pointer-events: none;
 }
-
 .fotoAna {
-    position:absolute;
     right: 0;
     bottom: 0;
     width: 99px;
     height: 63px;
 }
-
 .ana {
     justify-content: center;
     display: flex;
@@ -72,7 +51,6 @@
 .closeX:hover {
     background-color: white;
 }
-
 .closeX {
     display: flex;
     justify-content: center;
@@ -98,7 +76,6 @@
     padding: 9px;
     border-radius: 54%;
 }
-
 .icon:hover {
     color: rgb(0, 93, 173);
 }
@@ -108,29 +85,29 @@
     visibility: hidden;
 }
 .campoAna {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    top: 0%;
-    border-radius: 10px;
     position: absolute;
-
+    display: flex;
+    width: 420px;
+    height: 72%;
+    right: 1.7%;
+    bottom: 105px;
+    border-radius: 10px;
 }
 .containerElemets{
     box-shadow: 0px 32px 20px rgb(140, 149, 157);
     display: grid;
     width: 100%;
-    height: 85.8%;
+    height: 100%;
     grid-template: "cabezeraAna" 70px
                     "campoChat"1fr
                     "texAna" 28px/
                     100% ;
     border-radius: 12px;
-    background-color: aliceblue;
+    background-color:rgb(234, 238, 243);
 }
-
 /*HEADER TEXT ANA*/ 
 .cabezeraAna {
+    position: sticky;
     background-color: rgb(0, 93, 173);
     border-radius: 12px 12px 0px 0px;
     align-items: center;
@@ -138,7 +115,6 @@
     display: flex;
     grid-area: cabezeraAna;
 }
-
 .iconoAna{
     display: flex;
     width: 55px;
@@ -153,7 +129,6 @@
     font-size: 1.2em;
     font-weight: 500;
 }
-
 .campoChat{
     grid-area: campoChat;
     margin: 3px;
@@ -169,36 +144,100 @@
     width: 100%;
     height: 100%;
     display:flex;
-    background-color: blue;
     align-items: center;
 }
 .anaInt{
-    margin: 0px 0px 0px 35px;
+    margin: 0px 0px 0px 40px;
     width: 100px;
     height: 100px;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 2px 6px rgb(179, 186, 193);
 }
 .mss2{
-    background-color: brown;
+    margin-top: 10px;
     width: 100%;
-    height: 135px;
+    height: 125px;
     display: flex;
     align-items: center;
     justify-content: left;
 }
 .texInt{
     display: flex;
-    align-items: center;
-    border-radius: 6px;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 10px;
     width: 270px;
     height: 120px;
-    margin-left: 30px;
+    margin-left: 40px;
     background-color: white ;
+    box-shadow: 4px 2px 6px rgb(179, 186, 193);
 }
+.texIntmss{
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 0.86em;
+}
+.texIntmss2{
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
 .mss3{
+    margin-top: 15px;
     width: 100%;
-    height: 190px;
+    height: 100%;
+    display: flex;
+    position: sticky;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: orange;
+    overflow-y:scroll;
+}
+.slider
+{
+    background-color: white;
+    height: 130px;
+    width: 330px;
+    align-items: center;
+    height: 140px;
+    border-radius: 10px;
+    margin-left: 40px;
+    box-shadow: 4px 2px 6px rgb(179, 186, 193);
+    display: flex;
+    flex-direction: column;
+
+}
+.sliTex{
+    margin: 15px 0px 12px 0px;
+    font-size: 1em;
+    color: blue;
+    font-weight: 700;
+}
+.sliTex2{
+    text-align: center;
+    margin: 0px 10px 7px 10px;
+    font-size: 0.8em;
+}
+.sliTex3{
+    border-top: 2px solid rgb(124, 132, 139);
+    width: 100%;
+    height: 95%;
+    font-size: 1em;
+    color: rgb(0, 51, 255);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    border-radius: 0px 0px 10px 10px;
+}
+.sliTex3:hover{
+    color: white;
+    background-color: rgb(153, 148, 241);
 }
 
 
@@ -213,7 +252,7 @@
 }
 
 .tex1 {
-    background-color: aliceblue;
+    background-color:rgb(234, 238, 243);
     outline: none;
     width: 100%;
     height: 100%;
