@@ -1,8 +1,127 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
+
+/* poppins-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v20-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/poppins-v20-latin-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/poppins-v20-latin-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/poppins-v20-latin-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/poppins-v20-latin-regular.svg#Poppins') format('svg');
+    /* Legacy iOS */
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 245, 8);
+    display: grid;
+    grid-template: "empty-1 logo buscar  menu carrito empty-2" 100%/
+        1fr 15% 60% 7% 7% 1fr;
+}
+
+.logo {
+    grid-area: logo;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.buscar {
+    grid-area: buscar;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxBuscar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    width: 92%;
+    height: 25px;
+    display: flex;
+    outline: none;
+    border-radius: 7px;
+    border: 0.5px solid rgb(149, 149, 149);
+    padding: 5px;
+}
+
+.menu {
+    grid-area: menu;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.carrito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    grid-area: carrito;
+
+}
+
+.logo2 {
+    width: 140px;
+    height: 45px;
+}
+
+.logoM {
+    display: none;
+}
+
+i {
+    font-size: 30px;
+}
+
+.box-auto {
+    background-color: rgb(224, 224, 224);
+    width: 100%;
+    height: 200px;
+    display: grid;
+    grid-template: "box-img box-info" 250px/
+        1fr 2fr;
+}
+
+.box-img {
+    grid-area: box-img;
+}
+
+.box-info {
+    grid-area: box-info;
+}
+
+
 
 @media only screen and (max-width:900px) {
     header {
@@ -72,7 +191,12 @@
     }
 
     .logoM {
+        display: flex;
         width: 60px;
+    }
+
+    .logo2 {
+        display: none;
     }
 
     i {
@@ -80,19 +204,75 @@
     }
 
     .box-auto {
-        background-color: rgb(224, 224, 224);
+        margin-top: 40px;
+        background-color: rgb(242, 242, 242);
         width: 100%;
         height: 200px;
         display: grid;
-        grid-template: "box-img box-info" 250px/
-                            1fr    2fr;
+        grid-template: "empty-1 box-img box-info empty2" /
+            20px 6fr 7fr 20px;
     }
 
-    .box-img{
+    .box-img {
         grid-area: box-img;
     }
-    .box-info{
+
+    .box-info {
         grid-area: box-info;
+        margin-left: 15px;
+
     }
 
+    .img-auto {
+        width: 100%;
+        position: relative;
+        z-index: 10;
+        top: -15px;
+    }
+
+    .info-marca {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .txt-precio {
+        font-size: 1.6em;
+        font-weight: 900;
+
+    }
+
+    .txt-marca,
+    .txt-modelo {
+        font-size: .8em;
+        margin-right: 10px;
+    }
+
+
+    .box-corazon {
+
+        justify-content: flex-end;
+        display: flex;
+    }
+
+    .corazon {
+        width: 35px;
+        height: 35px;
+        border-radius: 17.5px;
+        position: relative;
+        left: -10px;
+        background-color: rgba(172, 172, 172, 0.485);
+        align-items: center;
+        z-index: 20;
+        display: flex;
+        justify-content: center;
+    }
+
+    .heart {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        color: blue;
+        font-size: 28px;
+
+    }
 }
