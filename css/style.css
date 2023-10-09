@@ -1,6 +1,31 @@
 * {
     padding: 0%;
     margin: 0%;
+    font-family: "Poppins", sans-serif;
+}
+
+.color1 {
+    color: #121728;
+}
+
+.color2 {
+    color: #123b52;
+}
+
+.color3 {
+    color: #146786;
+}
+
+.color4 {
+    color: #1da4bf;
+}
+
+.color5 {
+    color: #20dbd8;
+}
+
+body {
+    overflow-y: hidden;
 }
 
 html {
@@ -9,71 +34,46 @@ html {
 
 .fondo {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: fixed;
     z-index: -2;
     top: 0%;
+    filter: blur(0px);
+
 }
 
 /*CABEZERA*/
-.header {
+header {
+    top: 0;
+    position: absolute;
     width: 100%;
-    height: 5.729166666666667vw;
-    justify-content: center;
-    display: flex;
+    height: 80px;
     align-items: center;
-    top: 0%;
-    z-index: 2;
-    background-color: #1b2223;
-    border-bottom: 0.13020833333333334vw solid rgba(116, 116, 116, 0.664);
-    position: fixed;
+    background-color: #121728;
+    border-bottom: 2px solid rgba(116, 116, 116, 0.664);
+    display: grid;
+    grid-template: "empty-1   logo    empty-4    home     about    metas      proyectos      contacto   empty-3" 100%/
+        40px 15% 1fr 88px 88px 88px 88px 88px 40px;
 }
 
 h2 {
-    font-size: 1.7vw;
-    font-family: "Poppins", sans-serif;
-    font-weight: 900;
-    color: rgb(14, 246, 204);
+    font-size: 1.9vw;
+    font-weight: 600;
+    color: rgb(53, 203, 234);
 }
 
-.barra {
-    position: relative;
-    background-color: #1b2223;
-    height: 100%;
-    width: 100vw;
-    gap: 0.52vw;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    display: grid;
-    grid-template: "empty-1 logo  colec  men    women   nosotros   contacto   empty-2    menu  foto  empty-3" 100%/
-        1fr 15.625vw 5.79vw 5.79vw 5.79vw 5.79vw 5.79vw 10% 3.65vw 3.65vw 1fr;
-}
-
-.icon-style {
-    color: rgba(255, 255, 255, 0.877);
-    font-size: 1.9714656290531778vw;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.colec,
-.men,
-.women,
+.home,
+.about,
+.metas,
+.proyectos,
 .nosotros,
 .contacto {
-    height: 1.70vw;
-
-
-
+    height: 26.112px;
 }
 
-.logospi {
+/* .logospi {
     width: 13.020833333333334vw;
-}
+} */
 
 .logo {
     height: 100%;
@@ -83,23 +83,23 @@ h2 {
     justify-content: center;
 }
 
-.colec {
+.home {
 
-    grid-area: colec;
+    grid-area: home;
 }
 
-.men {
+.about {
 
-    grid-area: men;
+    grid-area: about;
 }
 
-.women {
+.metas {
 
-    grid-area: women;
+    grid-area: metas;
 }
 
-.nosotros {
-    grid-area: nosotros;
+.proyectos {
+    grid-area: proyectos;
 }
 
 .contacto {
@@ -107,38 +107,15 @@ h2 {
     grid-area: contacto;
 }
 
-.menu {
-    grid-area: menu;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.foto {
-    grid-area: foto;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.fotoMia {
-    width: 2.8vw;
-    height: 2.8vw;
-    border-radius: 50%;
-}
-
 .encabezado {
     color: rgba(255, 255, 255, 0.877);
     text-decoration: none;
-    font-family: "Poppins", sans-serif;
 }
 
 .hover1:hover {
     cursor: pointer;
-    padding-bottom: 2.17vw;
-    border-bottom: 0.208vw solid rgb(14, 246, 204);
+    padding-bottom: 28.7px;
+    border-bottom: 0.208vw solid rgb(53, 203, 234);
     ;
     transition: padding-bottom 0.2s;
 }
@@ -148,50 +125,199 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 0.9603841536614646vw;
+    font-size: .9em;
     cursor: pointer;
     text-decoration: none;
     list-style: none;
-    transition: padding 0.2s;
-    font-family: "Poppins", sans-serif;
+
 }
 
 /*SOBRE MI*/
-.Sobremi {
-    margin-top: 150px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    position: relative;
+main::-webkit-scrollbar {
+    width: 9px;
+    background-color: #ffffff00;
+    height: 100vh;
 }
 
-.sobre {
-    border-radius: 20px;
+main::-webkit-scrollbar-thumb {
+    background-color: #484b4d;
+    width: 11px;
+    border-radius: 4px;
+    border-right: 3px solid #18417191;
+}
+
+main {
+    margin-top: 81px;
+    overflow-y: scroll;
+    width: 100%;
+    height: calc(100vh - 82px);
+}
+
+.about-info {
+    background-color: #96d9ff6c;
     position: relative;
-    padding: 30px;
-    width: 1300px;
-    height: 800px;
-    background-color: rgba(151, 193, 193, 0.696);
-    display: flex;
+    width: 100%;
+    height: 100vh;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    display: grid;
+    grid-template: "empty-1 tituloPri  foto2 empty-2" 100%/
+        1fr 35% 25% 1fr;
+    transition-property: clip-path;
+    transition-duration: 1s;
+    clip-path: circle(45% at center);
 }
+
+.about-info:hover {
+    background-color: #77c6ff44;
+    clip-path: circle(100% at top center);
+
+}
+
+.fondo:hover>.about-info {
+    filter: blur(15px);
+}
+
+.linksAbout {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 80px;
+
+}
+
+.linkGit {
+    text-align: center;
+    justify-content: center;
+    font-size: 2.18em;
+    background-color: #0a1c27;
+    color: aliceblue;
+    border-radius: 50%;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    margin-left: 40px;
+}
+
+.linkIn {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    background-color: #0a1c27;
+    color: aliceblue;
+    border-radius: 50%;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+}
+
+.linkGit:hover,
+.linkIn:hover {
+    background-color: rgb(53, 203, 234);
+    width: 50px;
+    height: 50px;
+    transition: ease-in .2s;
+}
+
 
 .tituloPri {
-    top: 0;
+    grid-area: tituloPri;
     width: 100%;
-    height: 80px;
+    height: 64%;
     display: flex;
-    justify-content: center;
-    position: absolute;
+    text-align: justify;
+    flex-direction: column;
+    display: flex;
+
 }
 
 .titulo {
-    font-size: 3em;
-    text-align: justify;
+    padding: 15px;
+    font-size: 3.5em;
+    color: rgb(53, 203, 234);
+    word-spacing: 10px;
+    text-align: left;
+    text-shadow: 3px 3px 3px rgb(33, 43, 44);
 }
 
+.textHome {
+    font-size: 1.3em;
+    padding-left: 15px;
+    display: flex;
+    text-align: justify;
+    font-weight: 600;
+    color: aliceblue;
+    text-shadow: 1px 1px 1px rgb(33, 43, 44);
+}
+
+.textHome:hover {
+    font-weight: 800;
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px rgb(53, 203, 234);
+}
+
+.foto2 {
+    top: 130px;
+    border-radius: 170px;
+    position: absolute;
+    grid-area: foto2;
+    display: flex;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.foto2:hover {
+    background-color: rgb(53, 203, 234);
+    transition: ease-in-out .4s;
+    animation: infinite ease-in-out .3s;
+    width: 400px;
+    height: 400px;
+    border-radius: 200px;
+}
+
+.skills {
+    background-color: #121728;
+    width: 300px;
+    height: 60px;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    justify-content: center;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1.3em;
+    box-shadow: 2px 2px 2px rgb(255, 255, 255);
+}
+.skills:hover{
+    background-color: rgb(53, 203, 234);
+    color: #ffffff;
+    box-shadow: 2px 2px 2px rgb(255, 255, 255);
+} 
+
+.info{
+
+}
+.sobre {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 255, 255, 0.696);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template:"info  orgIconos";
+}
 .conte2 {
     width: 500px;
     height: 400px;
@@ -199,20 +325,6 @@ h2 {
     font-size: 1.5em;
 }
 
-.foto2 {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    width: 480px;
-    height: 350px
-}
-
-.ftamaño {
-    height: 90%;
-    width: 90%;
-    border-radius: 30%;
-}
 
 .orgIconos {
     position: absolute;
@@ -225,7 +337,21 @@ h2 {
     align-items: center;
     text-align: center;
 }
+.ftamaño {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+}
 
+.ftamaño:hover {
+    height: 90%;
+    width: 90%;
+    transition: ease-in-out .3s;
+}
 img {
     width: 80px;
     height: 80px;
@@ -289,10 +415,12 @@ img {
     grid-template: "box-1 box-2 box-3"
         "box-4 box-5 box-6"
         "box-7 empty empty";
-    grid-template-columns: 360px 360px 360px;
+    grid-template-columns: 25% 25% 25%;
     grid-template-rows: 400px 400px 400px;
 
 }
+
+/* contenido links */
 
 .box-1,
 .box-2,
@@ -382,22 +510,64 @@ h1 {
     border-bottom: 3px solid rgb(14, 246, 204);
 }
 
+footer {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    background-color: #121728;
+}
+
+/* poppins-regular - latin */
 @font-face {
     font-display: swap;
     /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/poppins-v20-latin-regular.eot');
-    /* IE9 Compat Modes */
-    src: url('../fonts/poppins-v20-latin-regular.eot?#iefix') format('embedded-opentype'),
-        /* IE6-IE8 */
-        url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'),
-        /* Super Modern Browsers */
-        url('../fonts/poppins-v20-latin-regular.woff') format('woff'),
-        /* Modern Browsers */
-        url('../fonts/poppins-v20-latin-regular.ttf') format('truetype'),
-        /* Safari, Android, iOS */
-        url('../fonts/poppins-v20-latin-regular.svg#Poppins') format('svg');
-    /* Legacy iOS */
+    src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/poppins-v20-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/poppins-v20-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* poppins-800 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/poppins-v20-latin-800.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
