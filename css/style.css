@@ -183,7 +183,7 @@ main {
     align-items: center;
     width: 40%;
     height: 80px;
-
+    background-color: #146786;
 }
 
 .linkGit {
@@ -196,10 +196,11 @@ main {
     text-decoration: none;
     width: 40px;
     height: 40px;
-    margin-left: 40px;
+    margin-left: 30px;
 }
 
 .linkIn {
+    margin-left: 300px; 
     display: flex;
     text-align: center;
     justify-content: center;
@@ -221,7 +222,9 @@ main {
     height: 50px;
     transition: ease-in .2s;
 }
-
+.linkGit:hover{
+    font-size: 2.8em;
+}
 
 .tituloPri {
     grid-area: tituloPri;
