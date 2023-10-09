@@ -30,6 +30,7 @@ body {
 
 html {
     scroll-behavior: smooth;
+
 }
 
 .fondo {
@@ -162,7 +163,7 @@ main {
     align-items: center;
     display: grid;
     grid-template: "empty-1 tituloPri  foto2 empty-2" 100%/
-        1fr 35% 25% 1fr;
+        1.7fr 35% 25% 1fr;
     transition-property: clip-path;
     transition-duration: 1s;
     clip-path: circle(45% at center);
@@ -182,48 +183,53 @@ main {
     display: flex;
     align-items: center;
     width: 40%;
-    height: 80px;
-    background-color: #146786;
+    height: 75px;
+}
+
+.boxint, .boxGit{
+    width: 75px;
+    height: 75px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
 .linkGit {
     text-align: center;
     justify-content: center;
-    font-size: 2.18em;
+    font-size: 2.8em;
     background-color: #0a1c27;
     color: aliceblue;
     border-radius: 50%;
     text-decoration: none;
-    width: 40px;
-    height: 40px;
-    margin-left: 30px;
+    width: 50px;
+    height: 50px;
+
 }
 
 .linkIn {
-    margin-left: 300px; 
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
-    font-size: 1.5em;
+    font-size: 2em;
     background-color: #0a1c27;
     color: aliceblue;
     border-radius: 50%;
     text-decoration: none;
-    width: 40px;
-    height: 40px;
-    margin-left: 15px;
+    width: 50px;
+    height: 50px;
 }
 
 .linkGit:hover,
 .linkIn:hover {
     background-color: rgb(53, 203, 234);
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     transition: ease-in .2s;
 }
 .linkGit:hover{
-    font-size: 2.8em;
+    font-size: 3.3em;
 }
 
 .tituloPri {
