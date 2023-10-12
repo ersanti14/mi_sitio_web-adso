@@ -1,23 +1,22 @@
 class Automovil {
-    constructor(marca, modelo, precio, anyo, kilometros, ciudad) {
+    constructor(marca, modelo, precio, anyo, kilometro , ciudad) {
         this.marca = marca;
         this.modelo = modelo;
         this.precio = precio;
         this.anyo = anyo;
-        this.kilometros = kilometros
-        this.ciudad = ciudad
+        this.kilometro = kilometro;
+        this.ciudad = ciudad;
 
 
     }
 }
-let auto1 = new Automovil("Mazda", "Cx5", 190000000, "2021", 800000, "Pitalito - Huila")
+let auto1 = new Automovil("Chevrolet", "Camaro", 190000000, "2021", 80000, "Pitalito - Huila")
 let marcaAutomovil = auto1.marca;
 
 let inputBusqueda = document.getElementById('inputBusqueda')
 
 inputBusqueda.addEventListener("keydown", function (event) {
     if (event.key == "Enter") {
-        /* alert(auto1.marca+" "+auto1.modelo) */
         let mainContent = document.getElementById("mainContent")
         //contenedor para el vehiculo
         let boxAuto = document.createElement("div")
@@ -84,10 +83,11 @@ let imgAuto = document.createElement("img")
 
 
 
-        let txtKilometrosFormant = new Intl.NumberFormat("de-DE").format(auto1.Kilometros)
+        let txtKilometrosFormant = new Intl.NumberFormat("de-DE").format(auto1.kilometro)
         let txtKilometros = document.createElement("label")
         boxProcedencia.appendChild(txtKilometros)
-        txtKilometros.innerText = txtKilometrosFormant + " · "
+        txtKilometros.innerHTML = txtKilometrosFormant + " · "
+    
 
         let txtCiudadad = document.createElement("label")
         boxProcedencia.appendChild(txtCiudadad)
