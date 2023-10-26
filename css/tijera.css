@@ -15,23 +15,33 @@ body{
 }
 .conteScore{
     position: relative;
-    width: 45%;
-    height: 170px;
+    width: 55%;
+    height: 130px;
     margin-top: 30px;
+    border: 8px solid rgb(43, 146, 18);
+    border-radius: 10px;
     background-color: aqua;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
+.score > h1 {
+    font-size: 2em;
+    line-height: 30px;
+}
 .score{
-    display: grid;
+    flex-direction: column;
+    justify-content: right;
+    display: flex;
     place-content: center;
-    width: 200px;
+    width: 160px;
     height: 120px;
     background-color: rgb(0, 52, 172);
-    margin-left: 30px;
+    margin-left: 15px;
+    padding-left: 15px;
     color: white;
+    text-align: justify;
 }
 .marcador{
     margin-right: 30px;
@@ -46,25 +56,49 @@ body{
 }
 .opciones{
     margin-top: 40px;
-    width: 800px;
-    height: 500px;
+    width: 1000px;
+    height: 450px;
     background-color: aliceblue;
-    display: flex;
+    display: grid;
+    grid-template: "tijera" ;
     align-items: center;
     justify-content: space-between;
+
 }
 .tijera,.piedra, .papel{
     justify-content: center;
     display: flex;
     align-items: center;
-    border-radius: 115px;
-    width: 230px;
-    height: 230px;
-    background-color: rgb(255, 132, 0);
-    
+    border-radius: 119px;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(254, 254, 254);
+    border: 15px solid rgb(255, 106, 0);
+    cursor: pointer;
+    transition: ease-in .1s;
 }
+.piedra:hover{
+    translate: x 10px;
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+}
+.papel:hover{
+    background-color: rgb(255, 225, 0);
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+}
+.tijera:hover{
+    background-color: rgb(255, 0, 0);
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+
+} 
 i{
-    font-size: 10em;
+    font-size: 7em;
     color: rgb(0, 20, 81);
 }
 
