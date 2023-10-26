@@ -18,9 +18,9 @@ body{
     width: 55%;
     height: 130px;
     margin-top: 30px;
-    border: 8px solid rgb(43, 146, 18);
+    border: 8px solid rgb(0, 119, 255);
     border-radius: 10px;
-    background-color: aqua;
+    background-color: rgb(6, 15, 47);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,7 +37,6 @@ body{
     place-content: center;
     width: 160px;
     height: 120px;
-    background-color: rgb(0, 52, 172);
     margin-left: 15px;
     padding-left: 15px;
     color: white;
@@ -54,13 +53,16 @@ body{
     flex-direction: column;
     align-items: center;
 }
+.marcador > span{
+    font-size: 1em;
+    line-height: 35px;
+}
 .opciones{
     margin-top: 40px;
     width: 1000px;
     height: 450px;
-    background-color: aliceblue;
-    display: grid;
-    grid-template: "tijera" ;
+    background-color: rgb(122, 193, 255);
+    display: flex;
     align-items: center;
     justify-content: space-between;
 
