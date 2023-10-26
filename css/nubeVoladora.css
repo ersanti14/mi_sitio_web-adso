@@ -1,0 +1,128 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: "Poppins", sans-serif;
+}
+
+  /* poppins-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v20-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/poppins-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/poppins-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/poppins-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/poppins-v20-latin-regular.svg#Poppins') format('svg'); /* Legacy iOS */
+}
+
+body{
+    overflow-y: hidden;
+}
+
+.cont-slider {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    
+}
+
+.slider-der {
+    position: absolute;
+    width: 250px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(0, 157, 255);
+    border: 6px solid white;
+    border-radius: 15px;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5em;
+    bottom: 5%;
+    left: 5%;
+}
+.slider-vol {
+    position: absolute;
+    width: 250px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(0, 157, 255);
+    border: 6px solid white;
+    border-radius: 15px;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5em;
+    bottom: -10%;
+    right: 5%;
+}
+
+.slider-der i {
+    font-size: 4.125vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-screen {
+    width: 100%;
+    border-radius: 0.62vw;
+    overflow: hidden;
+}
+
+.slider {
+    width: 400%;
+    display: flex;
+}
+
+.slider .img-spiderman {
+    width: 25%;
+}
+.nubeVoladora {
+    position: absolute;
+    z-index: 100;
+    width: 300px;
+    height: 300px;
+    left: 5%;
+    top: 30%;
+    transition: ease-in 3s;
+}
+
+.vuelo-activo {
+    left: 80%;
+}
+
+.goku{
+    transform: scaleX(-1);
+}
+.gokuParado{
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top:90%;
+    transition: ease 3s;
+}
+.goku11{
+    width: 120px;
+    height: 180px;
+    z-index: 200;
+}
+.gokuParado:hover{
+    left: 10%;
+    top: 25%;
+}

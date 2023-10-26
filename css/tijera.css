@@ -46,26 +46,33 @@ body{
     margin-right: 30px;
     width: 100px;
     height: 100px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(3, 9, 61);
     color: white;
     font-size: 2em;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    border: 5px solid white;
+    border-radius: 7px;
 }
 .marcador > span{
     font-size: 1em;
-    line-height: 35px;
+    line-height: 25px;
+    font-weight: 600;
 }
 .opciones{
     margin-top: 40px;
     width: 1000px;
-    height: 450px;
+    height: 500px;
     background-color: rgb(122, 193, 255);
-    display: flex;
+    display: grid;
     align-items: center;
-    justify-content: space-between;
-
+    justify-content: center;
+    grid-template:"boxTijera boxTijera"
+                    "boxPiedra boxPapel";
+    grid-template-columns: 240px 240px;
+    grid-template-rows: 215px;
 }
 .tijera,.piedra, .papel{
     justify-content: center;
@@ -79,23 +86,48 @@ body{
     cursor: pointer;
     transition: ease-in .1s;
 }
+
+.boxTijera{
+    grid-area: boxTijera;
+    width: 100%;
+    height: 215px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.boxPiedra{
+    grid-area: boxPiedra;
+    width: 100%;
+    height: 215px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.boxPapel{
+    grid-area: boxPapel;
+    width: 100%;
+    height: 215px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
 .piedra:hover{
     translate: x 10px;
     background-color: blue;
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     border-radius: 150px;
 }
 .papel:hover{
     background-color: rgb(255, 225, 0);
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     border-radius: 150px;
 }
 .tijera:hover{
     background-color: rgb(255, 0, 0);
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     border-radius: 150px;
 
 } 
