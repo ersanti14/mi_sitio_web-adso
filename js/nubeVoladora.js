@@ -1,7 +1,6 @@
 let slider = document.querySelector(".slider"); 
 let moverDer = document.querySelector(".slider-der");
 let imagenes = document.querySelectorAll(".img-spiderman").length;
-/* let volar = document.getElementById("volar") */
 let volarGoku = document.getElementById("pasar")
 
 let contador = 0;
@@ -19,19 +18,33 @@ function moverDerecha()
 
 moverDer.addEventListener("click", moverDerecha);
 
-
-const volar = document.getElementById('volar');
-const nubeVoladora = document.querySelector('.nubeVoladora');
-
 function activarVuelo() {
     nubeVoladora.classList.toggle('vuelo-activo');
 }
 
 volar.addEventListener("click", activarVuelo);
 
-// También escucha el evento "keydown" en el documento para detectar la tecla "Enter"
-document.addEventListener("keydown", function(event) {
-    if (event.key === "Enter") {
-        activarVuelo();
+const nubeVoladora = document.querySelector('.nubeVoladora');
+let topValue = 250;
+let leftValue = 25; 
+const maxLeftValue = 1600;
+const maxTopValue = 600; // Altura de la ventana del navegador
+
+window.addEventListener("keydown", function(event) {
+    if (event.key === "ArrowRight" && leftValue + 10 <= maxLeftValue) {
+        leftValue += 150;
+        nubeVoladora.style.left = leftValue + "px";
+    } else if (event.key === "ArrowLeft" && leftValue - 10 >= 0) {
+        leftValue -= 150;
+        nubeVoladora.style.left = leftValue + "px";
+    } else if (event.key === "ArrowDown" && topValue + 10 <= maxTopValue) {
+        topValue += 150;
+        nubeVoladora.style.top = topValue + "px";
+    } else if (event.key === "ArrowUp" && topValue - 10 >= 0) {
+        topValue -= 150;
+        nubeVoladora.style.top = topValue + "px";
     }
 });
+
+
+
