@@ -12,11 +12,18 @@ function moverDerecha()
         if(contador > imagenes -1){
             contador=0;
         }
-        slider.style.transition = "all 1s ease";
+        slider.style.transition = "all 0.5s ease";
     slider.style.marginLeft = `-${contador * 100}%`;
 }
 
 moverDer.addEventListener("click", moverDerecha);
+
+window.addEventListener("keydown", function(event) {
+    if(event.key === "space"){
+        moverDerecha
+    }
+    
+})
 
 function activarVuelo() {
     nubeVoladora.classList.toggle('vuelo-activo');
@@ -28,7 +35,7 @@ const nubeVoladora = document.querySelector('.nubeVoladora');
 let topValue = 250;
 let leftValue = 25; 
 const maxLeftValue = 1600;
-const maxTopValue = 600; // Altura de la ventana del navegador
+const maxTopValue = 600;
 
 window.addEventListener("keydown", function(event) {
     if (event.key === "ArrowRight" && leftValue + 10 <= maxLeftValue) {

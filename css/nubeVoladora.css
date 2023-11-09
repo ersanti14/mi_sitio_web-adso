@@ -116,7 +116,6 @@ body{
     left: 25px;
     top: 250px;
     transition: ease-in 2s;
-    background-color: aquamarine;
 }
 
 .vuelo-activo {
