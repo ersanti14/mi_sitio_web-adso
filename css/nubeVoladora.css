@@ -115,7 +115,7 @@ body{
     height: 200px;
     left: 25px;
     top: 250px;
-    transition: ease-in 2s;
+    transition: ease-in 0.5s;
 }
 
 .vuelo-activo {
