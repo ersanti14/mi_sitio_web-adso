@@ -6,13 +6,13 @@ valorStar.addEventListener("submit", function (e) {
   var numberStar = document.getElementById("starValue").value;
   let boxStar = document.getElementById("boxStar");
 
-  // Limpiar el contenido anterior de boxStar
+  
   boxStar.innerHTML = "";
 
-  // Convertir el valor a un número entero
+ 
   numberStar = parseInt(numberStar);
 
-  // Asegurarse de que el valor esté entre 1 y 5
+
   if (numberStar >= 1 && numberStar <= 5) {
     for (let i = 0; i < numberStar; i++) {
 
