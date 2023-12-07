@@ -1,4 +1,7 @@
 let valorStar = document.getElementById("valor");
+let progressBar = document.querySelector("progress");
+let calificacionTexto = document.getElementById("calificacionTexto");
+let calificacionValor = document.getElementById("calificacionValor");
 
 valorStar.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -8,33 +11,42 @@ valorStar.addEventListener("submit", function (e) {
   let mensajeError = document.getElementById("mensajeError");
 
   boxStar.innerHTML = "";
-  mensajeError.innerHTML = ""; // Limpiar mensajes de error previos
-
+  mensajeError.innerHTML = ""; 
   numberStar = parseFloat(numberStar);
 
   if (!isNaN(numberStar) && numberStar >= 0 && numberStar <= 5) {
-    // Redondea hacia arriba si el decimal es mayor o igual a 0.7
-    let roundedStar = Math.ceil(numberStar);
+    // Actualizar el valor de la barra de progreso
+    progressBar.value = numberStar * 20;
 
-    // Calcula las estrellas llenas
-    let fullStars = Math.floor(roundedStar);
+    // Mostrar la barra de progreso y el texto
+    progressBar.classList.remove("hidden");
+    calificacionTexto.classList.remove("hidden");
 
-    // Agrega las estrellas llenas
+    // Mostrar la calificación
+    calificacionValor.innerText = (numberStar * 20) + "%";
+
+    let fullStars = Math.floor(numberStar);
+    let remainingDecimal = numberStar - fullStars;
+    let halfStar = remainingDecimal >= 0.3 && remainingDecimal < 0.7;
+    let roundUp = remainingDecimal >= 0.7;
+
+    if (roundUp) {
+      fullStars += 1;
+    }
+
     for (let i = 0; i < fullStars; i++) {
       let calificacionStarLlena = document.createElement("i");
       calificacionStarLlena.setAttribute("class", "ti ti-star-filled");
       boxStar.appendChild(calificacionStarLlena);
     }
 
-    // Agrega la estrella a la mitad si es necesario
-    if (roundedStar % 1 !== 0) {
+    if (halfStar && !roundUp) {
       let calificacionStarMedia = document.createElement("i");
       calificacionStarMedia.setAttribute("class", "ti ti-star-half-filled");
       boxStar.appendChild(calificacionStarMedia);
     }
 
-    // Completa con estrellas vacías
-    for (let i = Math.ceil(roundedStar); i < 5; i++) {
+    for (let i = fullStars + ((halfStar && !roundUp) ? 1 : 0); i < 5; i++) {
       let calificacionStarVacia = document.createElement("i");
       calificacionStarVacia.setAttribute("class", "ti ti-star");
       boxStar.appendChild(calificacionStarVacia);

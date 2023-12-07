@@ -20,8 +20,14 @@
         <input type="number" id="starValue" step="0.1" min="0" max="10" placeholder="Escriba aqui...">
         <input type="submit" value="Confirmar">
       </form>
-      <div class="estrellas" id="boxStar"></div>
-      <div id="mensajeError" class="error"></div>
+      <div class="contentStar">
+        <div class="estrellas" id="boxStar"></div>
+        <div id="mensajeError" class="error"></div>
+        <div class="contenbarra">
+          <span id="calificacionTexto" class="hidden">Calificación: <span id="calificacionValor"></span></span>
+          <progress class="hidden" value="" max="100"></progress>
+        </div>
+      </div>
     </div>
   </div>
   <script src="js/calificacion.js"></script>
